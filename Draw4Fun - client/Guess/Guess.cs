@@ -8,20 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Draw4Fun___client
+namespace Draw4Fun___client.Guess
 {
-    public partial class Form1 : Form
+    public partial class GuessForm : Form
     {
-        public Form1()
+        public GuessForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Guess.GuessForm guess = new Guess.GuessForm();
-            guess.ShowDialog();
-
         }
     }
 }
