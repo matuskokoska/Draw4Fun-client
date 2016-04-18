@@ -21,5 +21,10 @@ namespace Draw4Fun___client.Guess
         {
 
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
