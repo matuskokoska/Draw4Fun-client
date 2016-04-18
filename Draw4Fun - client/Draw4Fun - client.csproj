@@ -100,6 +100,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Draw\eraser.png" />
+    <None Include="Resources\button_s.png" />
+    <None Include="Resources\guessing.png" />
     <None Include="Resources\painter.png" />
     <None Include="Resources\logo.png" />
     <None Include="Resources\button.png" />
