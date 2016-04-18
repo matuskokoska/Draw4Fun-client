@@ -100,6 +100,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Draw\eraser.png" />
+    <None Include="Resources\painter.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\button.png" />
+    <None Include="Resources\bg.jpg" />
     <None Include="Resources\erasser.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
