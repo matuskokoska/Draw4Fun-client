@@ -23,5 +23,11 @@ namespace Draw4Fun___client
             guess.ShowDialog();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Draw.Draw draw = new Draw.Draw();
+            draw.ShowDialog();
+        }
     }
 }
