@@ -20,4 +20,9 @@ C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Properties.Resources.resources
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Form1.resources
+<<<<<<< HEAD
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
+=======
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
+>>>>>>> e5c56c6acc3f9d86f7d37102b50be0312cf88d7e
