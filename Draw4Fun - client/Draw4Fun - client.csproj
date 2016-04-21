@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Draw\Draw.cs" />
+    <Compile Include="Draw\Draw.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Draw\Draw.Designer.cs">
       <DependentUpon>Draw.cs</DependentUpon>
     </Compile>
@@ -105,15 +107,6 @@
     <None Include="Resources\button.png" />
     <None Include="Resources\bg.jpg" />
     <None Include="Resources\erasser.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ServerData\ServerData.csproj">
-      <Project>{5d09db0c-dfd7-4e3c-982b-a67f9d1caeb2}</Project>
-      <Name>ServerData</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="API\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

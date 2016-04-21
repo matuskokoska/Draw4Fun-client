@@ -29,10 +29,5 @@ namespace Draw4Fun___client
             Draw.Draw draw = new Draw.Draw();
             draw.ShowDialog();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

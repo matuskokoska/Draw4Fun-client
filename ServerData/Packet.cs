@@ -17,7 +17,7 @@ namespace ServerData
         {
             IPAddress[] ips = Dns.GetHostAddresses(Dns.GetHostName());
 
-            foreach(IPAddress i in ips)
+            foreach (IPAddress i in ips)
             {
                 if (i.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
                 {

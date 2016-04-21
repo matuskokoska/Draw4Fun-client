@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{08E88C02-2A5D-4E22-94D6-FAA56ECB0B69}</ProjectGuid>
+    <ProjectGuid>{DFAF4970-5C1F-43D8-BDEB-A966907DE681}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Server</RootNamespace>
@@ -44,15 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientData.cs" />
-    <Compile Include="Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServerData\ServerData.csproj">
-      <Project>{5d09db0c-dfd7-4e3c-982b-a67f9d1caeb2}</Project>
+      <Project>{747e2100-e3b8-43d4-a2a4-482dbd2387fd}</Project>
       <Name>ServerData</Name>
     </ProjectReference>
   </ItemGroup>
