@@ -40,6 +40,25 @@ namespace Server
         }
 
         //clientdata thread - reciees data from rech client individually
+        public static void Data_IN(object cSocket)
+        {
+            Socket clientSocket = (Socket)cSocket;
+
+            byte[] Buffer;
+            int readBytes;
+
+            for (;;)
+            {
+                Buffer = new byte[clientSocket.SendBufferSize];
+
+                readBytes = clientSocket.Receive(Buffer);
+
+                if (readBytes > 0)
+                {
+                    //handle data
+                }
+            }
+        }
 
         //data manager
     }

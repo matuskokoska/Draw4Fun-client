@@ -18,11 +18,16 @@ namespace Server
         public ClientData()
         {
             id = Guid.NewGuid().ToString();
+            clientThread = new Thread(Server.Data_IN);
+            clientThread.Start(clientSocket);
         }
 
         public ClientData(Socket clientSocket)
         {
             this.clientSocket = clientSocket;
+            id = Guid.NewGuid().ToString();
+            clientThread = new Thread(Server.Data_IN);
+            clientThread.Start(clientSocket);
         }
     }
 }

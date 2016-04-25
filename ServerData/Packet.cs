@@ -12,6 +12,9 @@ namespace ServerData
 {
     public class Packet
     {
+        public List<string> Gdata;
+        public int packetInt;
+
 
         public static string GetIP4Address()
         {
