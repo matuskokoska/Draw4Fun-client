@@ -126,6 +126,12 @@
     <None Include="Resources\bg.jpg" />
     <None Include="Resources\erasser.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServerData\ServerData.csproj">
+      <Project>{747e2100-e3b8-43d4-a2a4-482dbd2387fd}</Project>
+      <Name>ServerData</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
