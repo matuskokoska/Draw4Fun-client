@@ -17,17 +17,19 @@ namespace Draw4Fun___client
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Guess.GuessForm guess = new Guess.GuessForm();
-            guess.ShowDialog();
+            this.Hide();
+            Menu menu = new Draw4Fun___client.Menu();
+            menu.ShowDialog();
+            this.Show();
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Draw.Draw draw = new Draw.Draw();
-            draw.ShowDialog();
+            Form2 register = new Form2();
+            register.ShowDialog();
         }
     }
 }
