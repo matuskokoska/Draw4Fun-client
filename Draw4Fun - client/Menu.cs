@@ -14,6 +14,8 @@ namespace Draw4Fun___client
     {
         public Menu()
         {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             InitializeComponent();
         }
 
