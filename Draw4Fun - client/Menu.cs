@@ -35,7 +35,7 @@ namespace Draw4Fun___client
             this.Hide();
             Form1 forma = new Form1();
             forma.ShowDialog();
-            this.Show();
+            
         }
     }
 }

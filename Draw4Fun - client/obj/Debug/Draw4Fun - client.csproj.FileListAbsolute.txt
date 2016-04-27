@@ -47,3 +47,7 @@ C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.dll
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.pdb
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
