@@ -19,9 +19,18 @@ namespace Draw4Fun___client
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Menu menu = new Draw4Fun___client.Menu();
-            menu.ShowDialog();
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+            {
+                MessageBox.Show("Please, fill all the needed informations.", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                this.Hide();
+                Menu menu = new Draw4Fun___client.Menu();
+                menu.ShowDialog();
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
