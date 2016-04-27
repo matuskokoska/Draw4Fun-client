@@ -18,6 +18,7 @@ namespace Server
 
         static void Main(string[] args) 
         {
+            Console.WriteLine("Starting server on " + Packet.GetIP4Address());
             listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             _clients = new List<ClientData>();
 
@@ -55,11 +56,16 @@ namespace Server
 
                 if (readBytes > 0)
                 {
-                    //handle data
+                    Packet packet = new Packet(Buffer);
+                    DataManager(packet);
                 }
             }
         }
 
-        //data manager
+        public static void DataManager(Packet p)
+        {
+
+        }
     }
 }
+

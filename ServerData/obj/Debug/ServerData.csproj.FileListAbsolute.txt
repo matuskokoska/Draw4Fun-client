@@ -3,3 +3,8 @@ C:\Users\Brano\Documents\GitHub\Draw4Fun-client\ServerData\bin\Debug\ServerData.
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.csprojResolveAssemblyReference.cache
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.dll
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.pdb
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\ServerData\bin\Debug\ServerData.dll
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\ServerData\bin\Debug\ServerData.pdb
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\ServerData\obj\Debug\ServerData.csprojResolveAssemblyReference.cache
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\ServerData\obj\Debug\ServerData.dll
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\ServerData\obj\Debug\ServerData.pdb

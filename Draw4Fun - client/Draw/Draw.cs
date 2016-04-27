@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Draw4Fun___client.Draw
 {
-    public partial class Draw : Form
+    public partial class  Draw : Form
     {
         private SolidBrush myBrush;
         private Graphics myGraphics;

@@ -53,3 +53,7 @@ C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.dll
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.pdb
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\bin\Debug\ServerData.dll
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\bin\Debug\ServerData.pdb
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
+C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources

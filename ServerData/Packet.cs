@@ -10,10 +10,48 @@ using System.Net;
 
 namespace ServerData
 {
+    [Serializable]
     public class Packet
     {
         public List<string> Gdata;
         public int packetInt;
+        public bool packetbool;
+        public string senderID;
+        public PacketType packetType;
+
+        public Packet(PacketType type, string senderID)
+        {
+            Gdata = new List<string>();
+            this.senderID = senderID;
+            this.packetType = type;
+        }
+
+        public Packet(byte[] packetbytes)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream(packetbytes);
+
+            Packet p = (Packet)bf.Deserialize(ms);
+
+            this.Gdata=p.Gdata;
+            this.packetInt=p.packetInt;
+            this.packetbool=p.packetbool;
+            this.senderID=p.senderID;
+            this.packetType=p.packetType;
+    }
+
+        public  byte[] ToBytes()
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream();
+
+            bf.Serialize(ms, this);
+            byte[] bytes = ms.ToArray();
+            ms.Close();
+            return bytes;
+        }
+
+
 
 
         public static string GetIP4Address()
@@ -29,6 +67,11 @@ namespace ServerData
             }
             return "127.0.0.1";
         }
+
+    }
+
+    public enum PacketType
+    {
 
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\DataHandler.cs" />
     <Compile Include="Draw\Draw.cs">
       <SubType>Form</SubType>
     </Compile>
