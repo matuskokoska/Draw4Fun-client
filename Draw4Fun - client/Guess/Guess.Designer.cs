@@ -59,9 +59,9 @@
             // 
             this.canvas.BackColor = System.Drawing.Color.White;
             this.canvas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.canvas.Location = new System.Drawing.Point(150, 206);
+            this.canvas.Location = new System.Drawing.Point(150, 200);
             this.canvas.Name = "canvas";
-            this.canvas.Size = new System.Drawing.Size(826, 439);
+            this.canvas.Size = new System.Drawing.Size(820, 440);
             this.canvas.TabIndex = 0;
             this.canvas.TabStop = false;
             // 
@@ -71,7 +71,7 @@
             this.guessLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.guessLabel.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guessLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.guessLabel.Location = new System.Drawing.Point(19, 28);
+            this.guessLabel.Location = new System.Drawing.Point(19, 41);
             this.guessLabel.Name = "guessLabel";
             this.guessLabel.Size = new System.Drawing.Size(144, 27);
             this.guessLabel.TabIndex = 1;
@@ -79,7 +79,7 @@
             // 
             // guessBox
             // 
-            this.guessBox.Location = new System.Drawing.Point(169, 32);
+            this.guessBox.Location = new System.Drawing.Point(169, 45);
             this.guessBox.Name = "guessBox";
             this.guessBox.Size = new System.Drawing.Size(190, 20);
             this.guessBox.TabIndex = 2;
@@ -150,7 +150,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.label3.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(687, 28);
+            this.label3.Location = new System.Drawing.Point(686, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 27);
             this.label3.TabIndex = 9;
@@ -162,7 +162,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.label4.Font = new System.Drawing.Font("Data Control", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(758, 27);
+            this.label4.Location = new System.Drawing.Point(757, 40);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(416, 30);
             this.label4.TabIndex = 10;
@@ -184,9 +184,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Draw4Fun___client.Properties.Resources.guessing;
-            this.pictureBox1.Location = new System.Drawing.Point(982, 450);
+            this.pictureBox1.Location = new System.Drawing.Point(980, 450);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 226);
+            this.pictureBox1.Size = new System.Drawing.Size(210, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -218,7 +218,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.pictureBox6.Image = global::Draw4Fun___client.Properties.Resources.button_s;
-            this.pictureBox6.Location = new System.Drawing.Point(365, 19);
+            this.pictureBox6.Location = new System.Drawing.Point(365, 32);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(119, 50);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -234,9 +234,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 682);
+            this.groupBox1.Location = new System.Drawing.Point(0, 662);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1184, 80);
+            this.groupBox1.Size = new System.Drawing.Size(1184, 100);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             // 
