@@ -175,5 +175,11 @@ namespace Draw4Fun___client.Draw
         {
             myGraphics.Clear(Color.White);
         }
+
+        private void pencil_btn_Click(object sender, EventArgs e)
+        {
+            myBrush.Color = Color.Black;
+            panel1.BackColor = Color.Black;
+        }
     }
 }

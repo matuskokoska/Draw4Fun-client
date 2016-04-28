@@ -1,0 +1,8 @@
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Server\bin\Debug\Server.exe.config
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Server\bin\Debug\Server.exe
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Server\bin\Debug\Server.pdb
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Server\bin\Debug\ServerData.dll
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Server\bin\Debug\ServerData.pdb
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Server\obj\Debug\Server.exe
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Server\obj\Debug\Server.pdb
