@@ -88,11 +88,11 @@
             // 
             this.oppL.AutoSize = true;
             this.oppL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.oppL.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oppL.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oppL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
             this.oppL.Location = new System.Drawing.Point(271, 32);
             this.oppL.Name = "oppL";
-            this.oppL.Size = new System.Drawing.Size(132, 27);
+            this.oppL.Size = new System.Drawing.Size(142, 28);
             this.oppL.TabIndex = 3;
             this.oppL.Text = "Opponent: ";
             // 
@@ -100,11 +100,11 @@
             // 
             this.drawingL.AutoSize = true;
             this.drawingL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.drawingL.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawingL.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drawingL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.drawingL.Location = new System.Drawing.Point(487, 32);
+            this.drawingL.Location = new System.Drawing.Point(498, 32);
             this.drawingL.Name = "drawingL";
-            this.drawingL.Size = new System.Drawing.Size(312, 27);
+            this.drawingL.Size = new System.Drawing.Size(337, 28);
             this.drawingL.TabIndex = 5;
             this.drawingL.Text = "is drawing from category:";
             // 
@@ -112,11 +112,11 @@
             // 
             this.categoryL.AutoSize = true;
             this.categoryL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.categoryL.Font = new System.Drawing.Font("From Cartoon Blocks", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryL.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoryL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.categoryL.Location = new System.Drawing.Point(805, 27);
+            this.categoryL.Location = new System.Drawing.Point(841, 32);
             this.categoryL.Name = "categoryL";
-            this.categoryL.Size = new System.Drawing.Size(76, 34);
+            this.categoryL.Size = new System.Drawing.Size(64, 28);
             this.categoryL.TabIndex = 6;
             this.categoryL.Text = "easy";
             // 
@@ -124,11 +124,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.label1.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(19, 32);
+            this.label1.Location = new System.Drawing.Point(8, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 27);
+            this.label1.Size = new System.Drawing.Size(181, 28);
             this.label1.TabIndex = 7;
             this.label1.Text = "Logged in as:";
             // 
@@ -136,11 +136,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.label2.Font = new System.Drawing.Font("From Cartoon Blocks", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(193, 27);
+            this.label2.Location = new System.Drawing.Point(195, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 34);
+            this.label2.Size = new System.Drawing.Size(64, 28);
             this.label2.TabIndex = 8;
             this.label2.Text = "Feri";
             // 
@@ -172,11 +172,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.label5.Font = new System.Drawing.Font("From Cartoon Blocks", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(409, 27);
+            this.label5.Location = new System.Drawing.Point(419, 32);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 34);
+            this.label5.Size = new System.Drawing.Size(64, 28);
             this.label5.TabIndex = 11;
             this.label5.Text = "Feri";
             // 
@@ -224,6 +224,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // groupBox1
             // 
@@ -272,7 +273,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GuessForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Guess";
+            this.Text = "Guessing";
             ((System.ComponentModel.ISupportInitialize)(this.canvas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

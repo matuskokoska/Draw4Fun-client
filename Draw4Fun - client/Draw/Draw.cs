@@ -181,5 +181,15 @@ namespace Draw4Fun___client.Draw
             myBrush.Color = Color.Black;
             panel1.BackColor = Color.Black;
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            //TODO: stream
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

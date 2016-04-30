@@ -17,14 +17,14 @@ namespace Draw4Fun___client.Guess
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            this.Dispose();
+        }
 
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            //TODO: Stream
         }
     }
 }

@@ -61,14 +61,18 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -77,11 +81,11 @@
             // 
             this.oppL.AutoSize = true;
             this.oppL.BackColor = System.Drawing.Color.Transparent;
-            this.oppL.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.oppL.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oppL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
             this.oppL.Location = new System.Drawing.Point(19, 37);
             this.oppL.Name = "oppL";
-            this.oppL.Size = new System.Drawing.Size(168, 27);
+            this.oppL.Size = new System.Drawing.Size(181, 28);
             this.oppL.TabIndex = 4;
             this.oppL.Text = "Logged In as:";
             // 
@@ -89,11 +93,11 @@
             // 
             this.oppNameL.AutoSize = true;
             this.oppNameL.BackColor = System.Drawing.Color.Transparent;
-            this.oppNameL.Font = new System.Drawing.Font("From Cartoon Blocks", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oppNameL.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oppNameL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.oppNameL.Location = new System.Drawing.Point(193, 32);
+            this.oppNameL.Location = new System.Drawing.Point(206, 37);
             this.oppNameL.Name = "oppNameL";
-            this.oppNameL.Size = new System.Drawing.Size(72, 34);
+            this.oppNameL.Size = new System.Drawing.Size(64, 28);
             this.oppNameL.TabIndex = 7;
             this.oppNameL.Text = "Feri";
             // 
@@ -101,23 +105,23 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(918, 43);
+            this.label1.Location = new System.Drawing.Point(731, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 27);
+            this.label1.Size = new System.Drawing.Size(142, 28);
             this.label1.TabIndex = 10;
-            this.label1.Text = "YOUR WORD: ";
+            this.label1.Text = "Your word:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("From Cartoon Blocks", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(1068, 38);
+            this.label2.Location = new System.Drawing.Point(892, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 34);
+            this.label2.Size = new System.Drawing.Size(90, 28);
             this.label2.TabIndex = 11;
             this.label2.Text = "bucket";
             // 
@@ -434,6 +438,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
+            this.groupBox3.Controls.Add(this.pictureBox4);
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.trackBar1);
@@ -444,9 +449,21 @@
             this.groupBox3.TabIndex = 40;
             this.groupBox3.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Draw4Fun___client.Properties.Resources.button_s;
+            this.pictureBox4.Location = new System.Drawing.Point(1058, 29);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(114, 44);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 40;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
+            this.groupBox4.Controls.Add(this.pictureBox3);
             this.groupBox4.Controls.Add(this.oppL);
             this.groupBox4.Controls.Add(this.oppNameL);
             this.groupBox4.Controls.Add(this.label2);
@@ -457,6 +474,18 @@
             this.groupBox4.Size = new System.Drawing.Size(1184, 80);
             this.groupBox4.TabIndex = 41;
             this.groupBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox3.Image = global::Draw4Fun___client.Properties.Resources.button;
+            this.pictureBox3.Location = new System.Drawing.Point(1068, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(113, 61);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox1
             // 
@@ -493,15 +522,17 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Draw";
-            this.Text = "Draw4Fun Drawing";
+            this.Text = "Drawing";
             this.Load += new System.EventHandler(this.Draw_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -545,5 +576,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
