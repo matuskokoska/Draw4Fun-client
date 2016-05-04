@@ -23,7 +23,7 @@ namespace Draw4Fun___client
         {
             if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
             {
-                MessageBox.Show("Please, fill all the needed informations.", "Error",
+                MessageBox.Show("Please fill all the required fields.", "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
@@ -39,6 +39,18 @@ namespace Draw4Fun___client
         {
             Form2 register = new Form2();
             register.ShowDialog();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string username;
+            username = textBox1.Text;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            string password;
+            password = textBox2.Text;
         }
     }
 }

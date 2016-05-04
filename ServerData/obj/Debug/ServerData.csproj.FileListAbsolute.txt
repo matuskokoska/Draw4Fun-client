@@ -13,3 +13,8 @@ D:\GitHub\Draw4Fun-client\ServerData\bin\Debug\ServerData.pdb
 D:\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.csprojResolveAssemblyReference.cache
 D:\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.dll
 D:\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.pdb
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\ServerData\bin\Debug\ServerData.dll
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\ServerData\bin\Debug\ServerData.pdb
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.csprojResolveAssemblyReference.cache
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.dll
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.pdb

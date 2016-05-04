@@ -45,7 +45,8 @@ namespace Draw4Fun___client
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //TODO: Info o nás
+            About about= new About();
+            about.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)

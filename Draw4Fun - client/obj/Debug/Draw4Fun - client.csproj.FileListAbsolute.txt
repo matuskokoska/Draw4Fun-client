@@ -62,3 +62,20 @@ D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.pdb
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.config
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.pdb
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.dll
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.pdb
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csprojResolveAssemblyReference.cache
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form1.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Guess.GuessForm.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Properties.Resources.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AboutUs.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
