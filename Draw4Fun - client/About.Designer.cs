@@ -98,9 +98,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(106, 222);
+            this.button1.Location = new System.Drawing.Point(97, 222);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 23);
+            this.button1.Size = new System.Drawing.Size(122, 23);
             this.button1.TabIndex = 6;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -110,6 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Draw4Fun___client.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(336, 314);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
