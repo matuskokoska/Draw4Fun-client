@@ -79,3 +79,4 @@ D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun__
 D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
 D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AboutUs.resources
 D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
