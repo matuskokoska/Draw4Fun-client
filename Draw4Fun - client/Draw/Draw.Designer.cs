@@ -61,6 +61,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.show_btn = new System.Windows.Forms.Button();
+            this.save_btn = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -131,7 +133,7 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(751, 44);
+            this.trackBar1.Location = new System.Drawing.Point(954, 36);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Minimum = 15;
@@ -246,7 +248,7 @@
             this.panel2.Location = new System.Drawing.Point(200, 246);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1093, 542);
+            this.panel2.Size = new System.Drawing.Size(1100, 500);
             this.panel2.TabIndex = 25;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove_1);
@@ -443,24 +445,46 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
+            this.groupBox3.Controls.Add(this.show_btn);
+            this.groupBox3.Controls.Add(this.save_btn);
             this.groupBox3.Controls.Add(this.pictureBox4);
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.trackBar1);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox3.Location = new System.Drawing.Point(0, 815);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(1579, 123);
             this.groupBox3.TabIndex = 40;
             this.groupBox3.TabStop = false;
+            // 
+            // show_btn
+            // 
+            this.show_btn.Location = new System.Drawing.Point(1235, 44);
+            this.show_btn.Name = "show_btn";
+            this.show_btn.Size = new System.Drawing.Size(75, 23);
+            this.show_btn.TabIndex = 42;
+            this.show_btn.Text = "show";
+            this.show_btn.UseVisualStyleBackColor = true;
+            this.show_btn.Click += new System.EventHandler(this.show_btn_Click);
+            // 
+            // save_btn
+            // 
+            this.save_btn.Location = new System.Drawing.Point(1120, 44);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(75, 23);
+            this.save_btn.TabIndex = 41;
+            this.save_btn.Text = "save";
+            this.save_btn.UseVisualStyleBackColor = true;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Draw4Fun___client.Properties.Resources.button_s;
             this.pictureBox4.Location = new System.Drawing.Point(1411, 36);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(152, 54);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -478,9 +502,9 @@
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(1579, 98);
             this.groupBox4.TabIndex = 41;
             this.groupBox4.TabStop = false;
@@ -490,7 +514,7 @@
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox3.Image = global::Draw4Fun___client.Properties.Resources.button;
             this.pictureBox3.Location = new System.Drawing.Point(1424, 19);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(151, 75);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -503,7 +527,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Draw4Fun___client.Properties.Resources.painter;
             this.pictureBox1.Location = new System.Drawing.Point(1307, 554);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(280, 271);
             this.pictureBox1.TabIndex = 42;
@@ -514,7 +538,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Draw4Fun___client.Properties.Resources.logo;
             this.pictureBox2.Location = new System.Drawing.Point(180, 111);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1147, 135);
             this.pictureBox2.TabIndex = 43;
@@ -591,5 +615,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button save_btn;
+        private System.Windows.Forms.Button show_btn;
     }
 }

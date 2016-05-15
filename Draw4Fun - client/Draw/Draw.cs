@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -190,6 +192,43 @@ namespace Draw4Fun___client.Draw
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        System.Drawing.Drawing2D.GraphicsState transState;
+
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap(panel2.Width, panel2.Height);
+            Graphics g = Graphics.FromImage(bmp);
+            Rectangle rect = panel2.RectangleToScreen(panel2.ClientRectangle);
+            g.CopyFromScreen(rect.Location, Point.Empty, panel2.Size);
+            g.Dispose();
+            SaveFileDialog s = new SaveFileDialog();
+            s.Filter = "Png files|*.png|jpeg files|*jpg|bitmaps|*.bmp";
+            if (s.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if (File.Exists(s.FileName))
+                {
+                    File.Delete(s.FileName);
+                }
+                if (s.FileName.Contains(".jpg"))
+                {
+                    bmp.Save(s.FileName, ImageFormat.Jpeg);
+                }
+                else if (s.FileName.Contains(".png"))
+                {
+                    bmp.Save(s.FileName, ImageFormat.Png);
+                }
+                else if (s.FileName.Contains(".bmp"))
+                {
+                    bmp.Save(s.FileName, ImageFormat.Bmp);
+                }
+            }
+        }
+
+        private void show_btn_Click(object sender, EventArgs e)
+        {
+            myGraphics.Restore(transState);
         }
     }
 }
