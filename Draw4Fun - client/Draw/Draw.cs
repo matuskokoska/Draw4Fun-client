@@ -17,10 +17,13 @@ namespace Draw4Fun___client.Draw
         private SolidBrush myBrush;
         private Graphics myGraphics;
         private bool IsPainting = false;
+        private int timerDuration = 90;
 
         public Draw()
         {
             InitializeComponent();
+            timer1.Enabled = true;
+            timer1.Start();
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -228,7 +231,19 @@ namespace Draw4Fun___client.Draw
 
         private void show_btn_Click(object sender, EventArgs e)
         {
-            myGraphics.Restore(transState);
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //timer1.Enabled = true;
+            //timer1.Start();
+            label3.Text = timerDuration.ToString();
+            timerDuration--;
+            if (timerDuration == -1)
+            {
+                timer1.Stop();
+            }
         }
     }
 }
