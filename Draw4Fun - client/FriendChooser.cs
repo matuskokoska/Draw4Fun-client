@@ -14,6 +14,8 @@ namespace Draw4Fun___client
     {
         public FriendChooser()
         {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             InitializeComponent();
             listBox1.Enabled = false;
         }
@@ -37,7 +39,7 @@ namespace Draw4Fun___client
             }
             else
             {
-                MessageBox.Show("You must choose friend", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("You must choose a friend.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -49,6 +51,11 @@ namespace Draw4Fun___client
         private void button2_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
