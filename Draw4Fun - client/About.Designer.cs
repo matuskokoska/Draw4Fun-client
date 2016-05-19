@@ -43,9 +43,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(40, 38);
+            this.label1.Location = new System.Drawing.Point(79, 47);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 20);
+            this.label1.Size = new System.Drawing.Size(297, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "This program was created by:";
             // 
@@ -55,9 +56,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(102, 88);
+            this.label2.Location = new System.Drawing.Point(136, 108);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 20);
+            this.label2.Size = new System.Drawing.Size(148, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Matúš Kokoška";
             // 
@@ -67,9 +69,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(102, 116);
+            this.label3.Location = new System.Drawing.Point(136, 143);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 20);
+            this.label3.Size = new System.Drawing.Size(147, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Branislav Dávid";
             // 
@@ -79,9 +82,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(102, 142);
+            this.label4.Location = new System.Drawing.Point(136, 175);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 20);
+            this.label4.Size = new System.Drawing.Size(155, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Michal Borovský";
             // 
@@ -91,9 +95,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(102, 170);
+            this.label5.Location = new System.Drawing.Point(136, 209);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 20);
+            this.label5.Size = new System.Drawing.Size(116, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Marek Šibal";
             // 
@@ -101,17 +106,19 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(76, 292);
+            this.label6.Location = new System.Drawing.Point(101, 359);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(182, 13);
+            this.label6.Size = new System.Drawing.Size(244, 17);
             this.label6.TabIndex = 5;
             this.label6.Text = "Copyright © 2016. All rights reserved.";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(97, 222);
+            this.button1.Location = new System.Drawing.Point(128, 316);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 23);
+            this.button1.Size = new System.Drawing.Size(163, 28);
             this.button1.TabIndex = 6;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -119,10 +126,10 @@
             // 
             // About
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Draw4Fun___client.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(336, 314);
+            this.ClientSize = new System.Drawing.Size(448, 386);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -130,6 +137,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "About";
             this.Text = "AboutUs";
             this.Load += new System.EventHandler(this.AboutUs_Load);

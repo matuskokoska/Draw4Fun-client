@@ -22,8 +22,10 @@ namespace Draw4Fun___client
         private void button1_Click(object sender, EventArgs e)
         {
             //TODO: Jak je dole ten friends button --- po kliknuti by mohlo otvorit tamto kde by vyzve kamarata na hru // odpoveda na vyzvu a hada
-            Draw.Draw draw = new Draw.Draw();
-            draw.ShowDialog();
+            /*Draw.Draw draw = new Draw.Draw();
+            draw.ShowDialog();*/
+            FriendChooser chooser = new FriendChooser();
+            chooser.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
