@@ -80,3 +80,4 @@ D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun -
 D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AboutUs.resources
 D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources

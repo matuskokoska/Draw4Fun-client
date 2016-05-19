@@ -35,7 +35,8 @@ namespace Draw4Fun___client
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //TODO: Tabulka highscore
+            Score score = new Score();
+            score.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)

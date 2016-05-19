@@ -63,5 +63,10 @@ namespace Draw4Fun___client
             string newpass;
             newpass = textBox2.Text;
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.google.com/policies/terms/");
+        }
     }
 }
