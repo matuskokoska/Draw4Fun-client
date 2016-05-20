@@ -53,6 +53,7 @@
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
     <Compile Include="API\DataHandler.cs" />
+    <Compile Include="MarekSibalJeSuper.cs" />
     <Compile Include="Draw\Draw.cs">
       <SubType>Form</SubType>
     </Compile>
