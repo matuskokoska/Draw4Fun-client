@@ -14,16 +14,19 @@ namespace Draw4Fun___client.Draw
 {
     public partial class  Draw : Form
     {
+        private String username;
         private SolidBrush myBrush;
         private Graphics myGraphics;
         private bool IsPainting = false;
         private int timerDuration = 90;
 
-        public Draw()
+        public Draw(String username)
         {
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Start();
+            this.username = username;
+            meLbl.Text = username;
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -187,20 +190,11 @@ namespace Draw4Fun___client.Draw
             panel1.BackColor = Color.Black;
         }
 
+        System.Drawing.Drawing2D.GraphicsState transState;
+
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             //TODO: stream
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
-
-        System.Drawing.Drawing2D.GraphicsState transState;
-
-        private void save_btn_Click(object sender, EventArgs e)
-        {
             Bitmap bmp = new Bitmap(panel2.Width, panel2.Height);
             Graphics g = Graphics.FromImage(bmp);
             Rectangle rect = panel2.RectangleToScreen(panel2.ClientRectangle);
@@ -227,6 +221,11 @@ namespace Draw4Fun___client.Draw
                     bmp.Save(s.FileName, ImageFormat.Bmp);
                 }
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
 
         private void show_btn_Click(object sender, EventArgs e)

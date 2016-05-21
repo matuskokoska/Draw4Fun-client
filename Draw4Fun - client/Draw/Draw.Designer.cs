@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Draw));
             this.oppL = new System.Windows.Forms.Label();
-            this.oppNameL = new System.Windows.Forms.Label();
+            this.meLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
@@ -62,8 +62,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.show_btn = new System.Windows.Forms.Button();
-            this.save_btn = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -92,17 +90,17 @@
             this.oppL.TabIndex = 4;
             this.oppL.Text = "Logged In as:";
             // 
-            // oppNameL
+            // meLbl
             // 
-            this.oppNameL.AutoSize = true;
-            this.oppNameL.BackColor = System.Drawing.Color.Transparent;
-            this.oppNameL.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.oppNameL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.oppNameL.Location = new System.Drawing.Point(206, 37);
-            this.oppNameL.Name = "oppNameL";
-            this.oppNameL.Size = new System.Drawing.Size(64, 28);
-            this.oppNameL.TabIndex = 7;
-            this.oppNameL.Text = "Feri";
+            this.meLbl.AutoSize = true;
+            this.meLbl.BackColor = System.Drawing.Color.Transparent;
+            this.meLbl.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
+            this.meLbl.Location = new System.Drawing.Point(206, 37);
+            this.meLbl.Name = "meLbl";
+            this.meLbl.Size = new System.Drawing.Size(64, 28);
+            this.meLbl.TabIndex = 7;
+            this.meLbl.Text = "Feri";
             // 
             // label1
             // 
@@ -131,7 +129,7 @@
             // trackBar1
             // 
             this.trackBar1.Location = new System.Drawing.Point(512, 29);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(2);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Minimum = 15;
             this.trackBar1.Name = "trackBar1";
@@ -144,7 +142,7 @@
             // 
             this.black_btn.BackColor = System.Drawing.Color.Black;
             this.black_btn.Location = new System.Drawing.Point(54, 15);
-            this.black_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.black_btn.Margin = new System.Windows.Forms.Padding(2);
             this.black_btn.Name = "black_btn";
             this.black_btn.Size = new System.Drawing.Size(22, 24);
             this.black_btn.TabIndex = 14;
@@ -155,7 +153,7 @@
             // 
             this.saddleBrown_btn.BackColor = System.Drawing.Color.SaddleBrown;
             this.saddleBrown_btn.Location = new System.Drawing.Point(108, 44);
-            this.saddleBrown_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saddleBrown_btn.Margin = new System.Windows.Forms.Padding(2);
             this.saddleBrown_btn.Name = "saddleBrown_btn";
             this.saddleBrown_btn.Size = new System.Drawing.Size(22, 24);
             this.saddleBrown_btn.TabIndex = 15;
@@ -166,7 +164,7 @@
             // 
             this.darkRed_btn.BackColor = System.Drawing.Color.DarkRed;
             this.darkRed_btn.Location = new System.Drawing.Point(108, 15);
-            this.darkRed_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.darkRed_btn.Margin = new System.Windows.Forms.Padding(2);
             this.darkRed_btn.Name = "darkRed_btn";
             this.darkRed_btn.Size = new System.Drawing.Size(22, 24);
             this.darkRed_btn.TabIndex = 16;
@@ -177,7 +175,7 @@
             // 
             this.yellow_btn.BackColor = System.Drawing.Color.Yellow;
             this.yellow_btn.Location = new System.Drawing.Point(190, 15);
-            this.yellow_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yellow_btn.Margin = new System.Windows.Forms.Padding(2);
             this.yellow_btn.Name = "yellow_btn";
             this.yellow_btn.Size = new System.Drawing.Size(22, 24);
             this.yellow_btn.TabIndex = 17;
@@ -188,7 +186,7 @@
             // 
             this.darkGreen_btn.BackColor = System.Drawing.Color.DarkGreen;
             this.darkGreen_btn.Location = new System.Drawing.Point(217, 44);
-            this.darkGreen_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.darkGreen_btn.Margin = new System.Windows.Forms.Padding(2);
             this.darkGreen_btn.Name = "darkGreen_btn";
             this.darkGreen_btn.Size = new System.Drawing.Size(22, 24);
             this.darkGreen_btn.TabIndex = 18;
@@ -199,7 +197,7 @@
             // 
             this.purple_btn.BackColor = System.Drawing.Color.Purple;
             this.purple_btn.Location = new System.Drawing.Point(271, 15);
-            this.purple_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.purple_btn.Margin = new System.Windows.Forms.Padding(2);
             this.purple_btn.Name = "purple_btn";
             this.purple_btn.Size = new System.Drawing.Size(22, 24);
             this.purple_btn.TabIndex = 19;
@@ -210,7 +208,7 @@
             // 
             this.mediumBlue_btn.BackColor = System.Drawing.Color.MediumBlue;
             this.mediumBlue_btn.Location = new System.Drawing.Point(244, 15);
-            this.mediumBlue_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mediumBlue_btn.Margin = new System.Windows.Forms.Padding(2);
             this.mediumBlue_btn.Name = "mediumBlue_btn";
             this.mediumBlue_btn.Size = new System.Drawing.Size(22, 24);
             this.mediumBlue_btn.TabIndex = 20;
@@ -221,7 +219,7 @@
             // 
             this.cyan_btn.BackColor = System.Drawing.Color.Cyan;
             this.cyan_btn.Location = new System.Drawing.Point(271, 44);
-            this.cyan_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cyan_btn.Margin = new System.Windows.Forms.Padding(2);
             this.cyan_btn.Name = "cyan_btn";
             this.cyan_btn.Size = new System.Drawing.Size(22, 24);
             this.cyan_btn.TabIndex = 21;
@@ -232,7 +230,7 @@
             // 
             this.white_btn.BackColor = System.Drawing.Color.White;
             this.white_btn.Location = new System.Drawing.Point(54, 44);
-            this.white_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.white_btn.Margin = new System.Windows.Forms.Padding(2);
             this.white_btn.Name = "white_btn";
             this.white_btn.Size = new System.Drawing.Size(22, 24);
             this.white_btn.TabIndex = 23;
@@ -244,7 +242,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(24, 116);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1000, 500);
             this.panel2.TabIndex = 25;
@@ -256,7 +254,7 @@
             // 
             this.silver_btn.BackColor = System.Drawing.Color.Silver;
             this.silver_btn.Location = new System.Drawing.Point(81, 44);
-            this.silver_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.silver_btn.Margin = new System.Windows.Forms.Padding(2);
             this.silver_btn.Name = "silver_btn";
             this.silver_btn.Size = new System.Drawing.Size(22, 24);
             this.silver_btn.TabIndex = 34;
@@ -267,7 +265,7 @@
             // 
             this.pink_btn.BackColor = System.Drawing.Color.Pink;
             this.pink_btn.Location = new System.Drawing.Point(163, 44);
-            this.pink_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pink_btn.Margin = new System.Windows.Forms.Padding(2);
             this.pink_btn.Name = "pink_btn";
             this.pink_btn.Size = new System.Drawing.Size(22, 24);
             this.pink_btn.TabIndex = 33;
@@ -278,7 +276,7 @@
             // 
             this.dodgerBlue_btn.BackColor = System.Drawing.Color.DodgerBlue;
             this.dodgerBlue_btn.Location = new System.Drawing.Point(244, 44);
-            this.dodgerBlue_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dodgerBlue_btn.Margin = new System.Windows.Forms.Padding(2);
             this.dodgerBlue_btn.Name = "dodgerBlue_btn";
             this.dodgerBlue_btn.Size = new System.Drawing.Size(22, 24);
             this.dodgerBlue_btn.TabIndex = 32;
@@ -289,7 +287,7 @@
             // 
             this.fuchsia_btn.BackColor = System.Drawing.Color.Fuchsia;
             this.fuchsia_btn.Location = new System.Drawing.Point(136, 44);
-            this.fuchsia_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fuchsia_btn.Margin = new System.Windows.Forms.Padding(2);
             this.fuchsia_btn.Name = "fuchsia_btn";
             this.fuchsia_btn.Size = new System.Drawing.Size(22, 24);
             this.fuchsia_btn.TabIndex = 31;
@@ -300,7 +298,7 @@
             // 
             this.limeGreen_btn.BackColor = System.Drawing.Color.LimeGreen;
             this.limeGreen_btn.Location = new System.Drawing.Point(190, 44);
-            this.limeGreen_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.limeGreen_btn.Margin = new System.Windows.Forms.Padding(2);
             this.limeGreen_btn.Name = "limeGreen_btn";
             this.limeGreen_btn.Size = new System.Drawing.Size(22, 24);
             this.limeGreen_btn.TabIndex = 30;
@@ -311,7 +309,7 @@
             // 
             this.lightYellow_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lightYellow_btn.Location = new System.Drawing.Point(217, 15);
-            this.lightYellow_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lightYellow_btn.Margin = new System.Windows.Forms.Padding(2);
             this.lightYellow_btn.Name = "lightYellow_btn";
             this.lightYellow_btn.Size = new System.Drawing.Size(22, 24);
             this.lightYellow_btn.TabIndex = 29;
@@ -322,7 +320,7 @@
             // 
             this.red_btn.BackColor = System.Drawing.Color.Red;
             this.red_btn.Location = new System.Drawing.Point(135, 15);
-            this.red_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.red_btn.Margin = new System.Windows.Forms.Padding(2);
             this.red_btn.Name = "red_btn";
             this.red_btn.Size = new System.Drawing.Size(22, 24);
             this.red_btn.TabIndex = 28;
@@ -333,7 +331,7 @@
             // 
             this.orange_btn.BackColor = System.Drawing.Color.Orange;
             this.orange_btn.Location = new System.Drawing.Point(163, 15);
-            this.orange_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.orange_btn.Margin = new System.Windows.Forms.Padding(2);
             this.orange_btn.Name = "orange_btn";
             this.orange_btn.Size = new System.Drawing.Size(22, 24);
             this.orange_btn.TabIndex = 27;
@@ -344,7 +342,7 @@
             // 
             this.grey_btn.BackColor = System.Drawing.Color.Gray;
             this.grey_btn.Location = new System.Drawing.Point(81, 15);
-            this.grey_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grey_btn.Margin = new System.Windows.Forms.Padding(2);
             this.grey_btn.Name = "grey_btn";
             this.grey_btn.Size = new System.Drawing.Size(22, 24);
             this.grey_btn.TabIndex = 26;
@@ -355,7 +353,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(10, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(39, 45);
             this.panel1.TabIndex = 35;
@@ -365,7 +363,7 @@
             this.pencil_btn.BackColor = System.Drawing.Color.White;
             this.pencil_btn.Image = global::Draw4Fun___client.Properties.Resources.pencil;
             this.pencil_btn.Location = new System.Drawing.Point(31, 11);
-            this.pencil_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pencil_btn.Margin = new System.Windows.Forms.Padding(2);
             this.pencil_btn.Name = "pencil_btn";
             this.pencil_btn.Size = new System.Drawing.Size(30, 32);
             this.pencil_btn.TabIndex = 37;
@@ -377,7 +375,7 @@
             this.blankPage_btn.BackColor = System.Drawing.Color.White;
             this.blankPage_btn.Image = global::Draw4Fun___client.Properties.Resources.blankPaper1;
             this.blankPage_btn.Location = new System.Drawing.Point(100, 11);
-            this.blankPage_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.blankPage_btn.Margin = new System.Windows.Forms.Padding(2);
             this.blankPage_btn.Name = "blankPage_btn";
             this.blankPage_btn.Size = new System.Drawing.Size(30, 32);
             this.blankPage_btn.TabIndex = 36;
@@ -389,7 +387,7 @@
             this.rubber.BackColor = System.Drawing.Color.White;
             this.rubber.Image = global::Draw4Fun___client.Properties.Resources.rsz_eraser;
             this.rubber.Location = new System.Drawing.Point(65, 11);
-            this.rubber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rubber.Margin = new System.Windows.Forms.Padding(2);
             this.rubber.Name = "rubber";
             this.rubber.Size = new System.Drawing.Size(30, 32);
             this.rubber.TabIndex = 24;
@@ -402,9 +400,9 @@
             this.groupBox1.Controls.Add(this.blankPage_btn);
             this.groupBox1.Controls.Add(this.rubber);
             this.groupBox1.Location = new System.Drawing.Point(352, 28);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(155, 55);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
@@ -432,9 +430,9 @@
             this.groupBox2.Controls.Add(this.saddleBrown_btn);
             this.groupBox2.Controls.Add(this.black_btn);
             this.groupBox2.Location = new System.Drawing.Point(11, 13);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(304, 82);
             this.groupBox2.TabIndex = 39;
             this.groupBox2.TabStop = false;
@@ -443,8 +441,6 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.groupBox3.Controls.Add(this.show_btn);
-            this.groupBox3.Controls.Add(this.save_btn);
             this.groupBox3.Controls.Add(this.pictureBox4);
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.groupBox1);
@@ -455,28 +451,6 @@
             this.groupBox3.Size = new System.Drawing.Size(1254, 100);
             this.groupBox3.TabIndex = 40;
             this.groupBox3.TabStop = false;
-            // 
-            // show_btn
-            // 
-            this.show_btn.Location = new System.Drawing.Point(738, 33);
-            this.show_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.show_btn.Name = "show_btn";
-            this.show_btn.Size = new System.Drawing.Size(56, 19);
-            this.show_btn.TabIndex = 42;
-            this.show_btn.Text = "show";
-            this.show_btn.UseVisualStyleBackColor = true;
-            this.show_btn.Click += new System.EventHandler(this.show_btn_Click);
-            // 
-            // save_btn
-            // 
-            this.save_btn.Location = new System.Drawing.Point(652, 33);
-            this.save_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(56, 19);
-            this.save_btn.TabIndex = 41;
-            this.save_btn.Text = "save";
-            this.save_btn.UseVisualStyleBackColor = true;
-            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
             // 
             // pictureBox4
             // 
@@ -496,7 +470,7 @@
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.pictureBox3);
             this.groupBox4.Controls.Add(this.oppL);
-            this.groupBox4.Controls.Add(this.oppNameL);
+            this.groupBox4.Controls.Add(this.meLbl);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -559,7 +533,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Draw";
             this.Text = "Drawing";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -581,7 +555,7 @@
         #endregion
 
         private System.Windows.Forms.Label oppL;
-        private System.Windows.Forms.Label oppNameL;
+        private System.Windows.Forms.Label meLbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TrackBar trackBar1;
@@ -616,8 +590,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button save_btn;
-        private System.Windows.Forms.Button show_btn;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label3;
     }

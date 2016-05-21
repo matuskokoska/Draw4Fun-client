@@ -87,3 +87,5 @@ D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun__
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.FriendChooser.resources
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml

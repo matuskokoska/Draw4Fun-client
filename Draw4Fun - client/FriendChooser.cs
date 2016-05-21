@@ -12,12 +12,15 @@ namespace Draw4Fun___client
 {
     public partial class FriendChooser : Form
     {
-        public FriendChooser()
+        private String username;
+
+        public FriendChooser(String username)
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             InitializeComponent();
             listBox1.Enabled = false;
+            this.username = username;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -34,7 +37,7 @@ namespace Draw4Fun___client
         {
             if ((radioButton2.Checked && listBox1.SelectedIndex != -1) || radioButton1.Checked)
             {
-                Draw.Draw draw = new Draw.Draw();
+                Draw.Draw draw = new Draw.Draw(username);
                 draw.ShowDialog();
             }
             else

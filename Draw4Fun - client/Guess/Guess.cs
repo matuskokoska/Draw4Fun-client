@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,14 +14,16 @@ namespace Draw4Fun___client.Guess
 {
     public partial class GuessForm : Form
     {
-        private int screenHeight;
-        private int screenWidth;
+        //private String opponent;
+        //private String hint;
+        private String guess;
+        private String json;
 
-        public GuessForm()
+        public GuessForm(String loggedIn)
         {
             InitializeComponent();
+            meLbl.Text = loggedIn;
         }
-
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
@@ -28,8 +32,17 @@ namespace Draw4Fun___client.Guess
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            //TODO: Stream
+            SubmitGuess();
+        }
+
+        private void SubmitGuess()
+        {
+            
+            guess = "{'guess':'"+guessBox.Text+"'}";
+            json = JsonConvert.SerializeObject(guess);
+            Console.Write("JSON:"+json);
         }
 
     }
+
 }
