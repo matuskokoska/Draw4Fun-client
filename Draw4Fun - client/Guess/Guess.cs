@@ -12,10 +12,14 @@ namespace Draw4Fun___client.Guess
 {
     public partial class GuessForm : Form
     {
+        private int screenHeight;
+        private int screenWidth;
+
         public GuessForm()
         {
             InitializeComponent();
         }
+
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
@@ -26,5 +30,6 @@ namespace Draw4Fun___client.Guess
         {
             //TODO: Stream
         }
+
     }
 }

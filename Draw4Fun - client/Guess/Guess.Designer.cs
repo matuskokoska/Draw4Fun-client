@@ -41,14 +41,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.canvas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -57,11 +55,12 @@
             // 
             // canvas
             // 
+            this.canvas.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.canvas.BackColor = System.Drawing.Color.White;
             this.canvas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.canvas.Location = new System.Drawing.Point(150, 200);
+            this.canvas.Location = new System.Drawing.Point(107, 132);
             this.canvas.Name = "canvas";
-            this.canvas.Size = new System.Drawing.Size(820, 440);
+            this.canvas.Size = new System.Drawing.Size(1000, 500);
             this.canvas.TabIndex = 0;
             this.canvas.TabStop = false;
             // 
@@ -148,9 +147,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
+            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
             this.label3.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(686, 41);
+            this.label3.Location = new System.Drawing.Point(731, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 27);
             this.label3.TabIndex = 9;
@@ -160,9 +160,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
+            this.label4.Dock = System.Windows.Forms.DockStyle.Right;
             this.label4.Font = new System.Drawing.Font("Data Control", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(757, 40);
+            this.label4.Location = new System.Drawing.Point(803, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(416, 30);
             this.label4.TabIndex = 10;
@@ -182,31 +183,22 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Draw4Fun___client.Properties.Resources.guessing;
-            this.pictureBox1.Location = new System.Drawing.Point(980, 450);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 478);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(210, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Draw4Fun___client.Properties.Resources.logo;
-            this.pictureBox4.Location = new System.Drawing.Point(135, 90);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(860, 110);
-            this.pictureBox4.TabIndex = 15;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox5.Image = global::Draw4Fun___client.Properties.Resources.button;
-            this.pictureBox5.Location = new System.Drawing.Point(1068, 16);
+            this.pictureBox5.Location = new System.Drawing.Point(1106, 16);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(113, 61);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -235,9 +227,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 662);
+            this.groupBox1.Location = new System.Drawing.Point(0, 704);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1184, 100);
+            this.groupBox1.Size = new System.Drawing.Size(1222, 100);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             // 
@@ -254,7 +246,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1184, 80);
+            this.groupBox2.Size = new System.Drawing.Size(1222, 80);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             // 
@@ -264,19 +256,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Draw4Fun___client.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(1184, 762);
+            this.ClientSize = new System.Drawing.Size(1222, 804);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.canvas);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GuessForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Guessing";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.canvas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -301,7 +293,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.GroupBox groupBox1;
