@@ -34,6 +34,10 @@ namespace Draw4Fun___client
             }
             else
             {
+                PassHash hash = new PassHash();
+                string newPass;
+                newPass = textBox3.Text;
+                hash.EncodePasswordToBase64(newPass);
                 /*  string connectionString = null;
                 string sql = null;
                 connectionString = "Data Source=UMAIR;Initial Catalog=Air; Trusted_Connection=True;";
@@ -60,13 +64,17 @@ namespace Draw4Fun___client
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            string newpass;
-            newpass = textBox2.Text;
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.google.com/policies/terms/");
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

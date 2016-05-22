@@ -57,6 +57,7 @@
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
     <Compile Include="API\DataHandler.cs" />
+    <Compile Include="PassHash.cs" />
     <Compile Include="Request.cs" />
     <Compile Include="Draw\Draw.cs">
       <SubType>Form</SubType>

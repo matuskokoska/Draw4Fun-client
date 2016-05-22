@@ -49,8 +49,10 @@ namespace Draw4Fun___client
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+            PassHash hash = new PassHash();
             string password;
-            password = textBox2.Text;
+            password = textBox2.Text;          
+            hash.EncodePasswordToBase64(password);
         }
     }
 }
