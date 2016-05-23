@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Draw4Fun___client
 {
-    public partial class Form2 : Form
+    public partial class Register : Form
     {
-        public Form2()
+        public Register()
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -27,7 +27,8 @@ namespace Draw4Fun___client
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) ||  !checkBox1.Checked)
+            if ((string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) ||
+                string.IsNullOrEmpty(textBox3.Text) || !checkBox1.Checked) && !textBox2.Text.Equals(textBox3.Text))
             {
                 MessageBox.Show("Please fill all the required fields.", "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error); 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Draw4Fun___client
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -37,7 +37,7 @@ namespace Draw4Fun___client
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 register = new Form2();
+            Register register = new Register();
             register.ShowDialog();
         }
 
