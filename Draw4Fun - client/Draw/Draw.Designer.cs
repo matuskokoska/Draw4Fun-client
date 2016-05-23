@@ -128,7 +128,7 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(512, 29);
+            this.trackBar1.Location = new System.Drawing.Point(1012, 36);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(2);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Minimum = 15;

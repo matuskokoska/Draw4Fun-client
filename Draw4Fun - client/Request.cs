@@ -10,7 +10,7 @@ namespace Draw4Fun___client
 {
     class Request
     {
-        static void Main(string[] args)
+        static void nieco(string[] args)
         {
             getRequest("http://www.microsoft.com");
             postRequest("http://posttestserver.com/post.php");
