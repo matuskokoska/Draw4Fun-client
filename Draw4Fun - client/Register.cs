@@ -43,14 +43,14 @@ namespace Draw4Fun___client
                 
 
                 //test
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://url");
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:1337/test");
                 httpWebRequest.ContentType = "application/json";
                 httpWebRequest.Method = "POST";
 
                 using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
                 {
-                    string json = "{\"nickname\":\""+encryptedPass+"\"," +
-                                  "\"password\":\""+textBox1.Text+"\"}";
+                    string json = "{\"nickname\":\""+textBox1.Text+"\"," +
+                                  "\"password\":\""+encryptedPass+"\"}";
 
                     streamWriter.Write(json);
                     streamWriter.Flush();
