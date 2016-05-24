@@ -38,6 +38,7 @@ namespace Draw4Fun___client
             if ((radioButton2.Checked && listBox1.SelectedIndex != -1) || radioButton1.Checked)
             {
                 Draw.Draw draw = new Draw.Draw(username);
+                this.Dispose();
                 draw.ShowDialog();
             }
             else

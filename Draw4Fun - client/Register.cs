@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,23 +38,32 @@ namespace Draw4Fun___client
             else
             {
                 PassHash hash = new PassHash();
-                string newPass;
-                newPass = textBox3.Text;
-                hash.EncodePasswordToBase64(newPass);
-                /*  string connectionString = null;
-                string sql = null;
-                connectionString = "Data Source=UMAIR;Initial Catalog=Air; Trusted_Connection=True;";
-                using (SqlConnection cnn = new SqlConnection(connectionString))
+                string encryptedPass;
+                encryptedPass=hash.EncodePasswordToBase64(textBox3.Text);
+                
+
+                //test
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://url");
+                httpWebRequest.ContentType = "application/json";
+                httpWebRequest.Method = "POST";
+
+                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
                 {
-                    sql = "insert into NewUser ([username], [password]) values(@username,@password)";
-                    cnn.Open();
-                    using (SqlCommand cmd = new SqlCommand(sql, cnn))
-                    {
-                        cmd.Parameters.AddWithValue("@username", textBox1.Text);
-                        cmd.Parameters.AddWithValue("@password", textBox2.Text);
-                        cmd.ExecuteNonQuery();
-                    } 
-                } */
+                    string json = "{\"nickname\":\""+encryptedPass+"\"," +
+                                  "\"password\":\""+textBox1.Text+"\"}";
+
+                    streamWriter.Write(json);
+                    streamWriter.Flush();
+                    streamWriter.Close();
+                }
+
+                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                {
+                    var result = streamReader.ReadToEnd();
+                }
+                //end test
+
                 this.Close();
             }
         }
