@@ -56,7 +56,19 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddFriend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFriend.Designer.cs">
+      <DependentUpon>AddFriend.cs</DependentUpon>
+    </Compile>
     <Compile Include="API\DataHandler.cs" />
+    <Compile Include="Friends.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Friends.Designer.cs">
+      <DependentUpon>Friends.cs</DependentUpon>
+    </Compile>
     <Compile Include="PassHash.cs" />
     <Compile Include="Request.cs" />
     <Compile Include="Draw\Draw.cs">
@@ -106,8 +118,14 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddFriend.resx">
+      <DependentUpon>AddFriend.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Draw\Draw.resx">
       <DependentUpon>Draw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Friends.resx">
+      <DependentUpon>Friends.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

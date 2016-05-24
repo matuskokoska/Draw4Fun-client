@@ -57,7 +57,8 @@ namespace Draw4Fun___client
 
         private void button6_Click(object sender, EventArgs e)
         {
-            //TODO: Dajaka tabulka / novy formular kde bude mat friendov - tam by som navrhol button na Challenge friend abo co, pridat priatela, vyhladavanie apod.
+            Friends fr = new Friends();
+            fr.ShowDialog();
         }
     }
 }

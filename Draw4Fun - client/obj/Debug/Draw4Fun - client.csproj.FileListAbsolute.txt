@@ -93,3 +93,9 @@ C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Login.resources
+D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
