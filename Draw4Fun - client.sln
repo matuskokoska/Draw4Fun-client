@@ -5,10 +5,6 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw4Fun - client", "Draw4Fun - client\Draw4Fun - client.csproj", "{92471901-0E1A-4287-AEB0-C7E67914AE9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerData", "ServerData\ServerData.csproj", "{747E2100-E3B8-43D4-A2A4-482DBD2387FD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{DFAF4970-5C1F-43D8-BDEB-A966907DE681}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{92471901-0E1A-4287-AEB0-C7E67914AE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92471901-0E1A-4287-AEB0-C7E67914AE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92471901-0E1A-4287-AEB0-C7E67914AE9D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{747E2100-E3B8-43D4-A2A4-482DBD2387FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{747E2100-E3B8-43D4-A2A4-482DBD2387FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{747E2100-E3B8-43D4-A2A4-482DBD2387FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{747E2100-E3B8-43D4-A2A4-482DBD2387FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFAF4970-5C1F-43D8-BDEB-A966907DE681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFAF4970-5C1F-43D8-BDEB-A966907DE681}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFAF4970-5C1F-43D8-BDEB-A966907DE681}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFAF4970-5C1F-43D8-BDEB-A966907DE681}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
