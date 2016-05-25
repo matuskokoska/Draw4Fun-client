@@ -11,8 +11,6 @@ router.post('/', function (req, res) {
 		console.log(success);
 		res.json(success);
 	});
-
-
 });
 
 

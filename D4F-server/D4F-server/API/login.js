@@ -1,5 +1,4 @@
 ﻿var db = require('./DBconnect.js');
-var hash = require('password-hash');
 
 
 module.exports = {
