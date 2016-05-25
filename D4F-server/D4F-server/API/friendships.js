@@ -11,13 +11,12 @@ module.exports = {
 	},
 
 	deleteFriend: function (user1, user2, callback) {
-		db.nonQuery("DELETE FROM friendships WHERE user1="+user1, function (success) {
+		db.nonQuery("DELETE FROM friendships WHERE user1="+user1+" AND user2="+user2, function (success) {
 			if (typeof callback === "function") {
 				callback(success);
 			}
 		});
 	},
-
 
 
 	loadFriends: function (userid,callback) {

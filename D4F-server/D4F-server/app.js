@@ -10,10 +10,12 @@ var test = require('./routes/test');
 var login = require('./routes/login');
 var register = require('./routes/register');
 var logout = require('./routes/logout');
-var requests = require('./routes/requests');
 var users = require('./routes/users');
 
 var app = express();
+app.listen(9797, function (){
+  console.log('Server is Up on Port ' + 9797);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,7 +34,6 @@ app.use('/test', test);
 app.use('/login', login);
 app.use('/register', register);
 app.use('/logout', logout);
-app.use('/requests', requests);
 app.use('/users', users);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
