@@ -1,6 +1,7 @@
 ﻿var express = require('express');
 var path = require('path');
 //var favicon = require('serve-favicon');
+global.appRoot = path.resolve(__dirname);
 //var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 

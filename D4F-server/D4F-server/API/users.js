@@ -2,7 +2,7 @@
 
 module.exports = {
     load: function (userid,callback) {
-        db.query("SELECT FROM users WHERE userid="+userid+"",
+        db.query("SELECT id,nickname FROM users WHERE userid="+userid+"",
         function (result) {
             if (typeof callback === "function") {
                 callback(result[0]);
@@ -10,23 +10,12 @@ module.exports = {
         });
     },
 
-    update: function (user,callback) {
-        db.nonQuery("UPDATE users SET nickname:'" + user.nickname + "', password:'" + user.password +
-                    "', email:'" + user.email + "', phone:'" + user.phone + "', name:'" + user.name +
-                    "', surname:'" + user.surname + "', ",
-        function (success) {
-            if (typeof callback === "function") {
-                callback(success);
-            }
-        });
-	},
-
 	searchUser: function (name, callback) {
-		db.Query("SELECT * FROM users WHERE name LIKE '%"+name+"%' OR surname LIKE '%" + name + "%' OR nickname LIKE '%" + name + "%' OR email LIKE '%" + name + "%'",
+		db.Query("SELECT id,nickname FROM users WHERE nickname LIKE '%" + name + "%'",
         function (results) {
 			if (typeof callback === "function") {
 				callback(results);
 			}
 		});
-	},
+	}
 };
