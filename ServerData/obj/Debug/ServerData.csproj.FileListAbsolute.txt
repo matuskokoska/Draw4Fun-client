@@ -17,3 +17,4 @@ D:\GitHub\Draw4Fun-client\ServerData\bin\Debug\ServerData.dll
 D:\GitHub\Draw4Fun-client\ServerData\bin\Debug\ServerData.pdb
 D:\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.dll
 D:\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.pdb
+D:\GitHub\Draw4Fun-client\ServerData\obj\Debug\ServerData.csprojResolveAssemblyReference.cache

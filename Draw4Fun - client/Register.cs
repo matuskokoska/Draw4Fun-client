@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -37,34 +38,51 @@ namespace Draw4Fun___client
             }
             else
             {
-                PassHash hash = new PassHash();
-                string encryptedPass;
-                encryptedPass=hash.EncodePasswordToBase64(textBox3.Text);
+                if (!isUsernameValid(textBox1.Text))
+                {
+                    MessageBox.Show("Invalid username. Username must contain 3 - 16 characters", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else if (!isPasswordValid(textBox2.Text))
+                {
+                    MessageBox.Show("Invalid password. Password must contain 8 - 16 characters.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                } else if(!isPasswordEqual(textBox2.Text, textBox3.Text)) {
+                    MessageBox.Show("Passwords are not equal.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else {
+                    PassHash hash = new PassHash();
+                    string encryptedPass;
+                    encryptedPass = hash.EncodePasswordToBase64(textBox3.Text);
+
+
+                    //test
+                    var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:1337/test");
+                    httpWebRequest.ContentType = "application/json";
+                    httpWebRequest.Method = "POST";
+
+                    using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+                    {
+                        string json = "{\"nickname\":\"" + textBox1.Text + "\"," +
+                                      "\"password\":\"" + encryptedPass + "\"}";
+
+                        streamWriter.Write(json);
+                        streamWriter.Flush();
+                        streamWriter.Close();
+                    }
+
+                    var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+                    using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                    {
+                        var result = streamReader.ReadToEnd();
+                    }
+                    //end test
+
+                    this.Close();
+                }
                 
-
-                //test
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:1337/test");
-                httpWebRequest.ContentType = "application/json";
-                httpWebRequest.Method = "POST";
-
-                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
-                {
-                    string json = "{\"nickname\":\""+textBox1.Text+"\"," +
-                                  "\"password\":\""+encryptedPass+"\"}";
-
-                    streamWriter.Write(json);
-                    streamWriter.Flush();
-                    streamWriter.Close();
-                }
-
-                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-                {
-                    var result = streamReader.ReadToEnd();
-                }
-                //end test
-
-                this.Close();
             }
         }
 
@@ -87,6 +105,45 @@ namespace Draw4Fun___client
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private Boolean isUsernameValid(string username)
+        {
+            Regex regex = new Regex(@"^[a-zA-Z0-9_]{3,16}$");
+            Match match = regex.Match(username);
+            if (!match.Success)
+            {
+                return false;
+            }
+            else {
+                return true;
+            }
+
+        }
+
+        private Boolean isPasswordValid(string password)
+        {
+            Regex regex = new Regex(@"^[a-zA-Z0-9]{8,16}$");
+            Match match = regex.Match(password);
+            if (!match.Success)
+            {
+                return false;
+            }
+            else {
+                return true;
+            }
+
+        }
+
+        private bool isPasswordEqual(string password, string confirmPassword)
+        {
+            if (!password.Equals(confirmPassword))
+            {
+                return false;
+            } else {
+                return true;
+            }
+            
         }
     }
 }
