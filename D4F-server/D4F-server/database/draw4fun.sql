@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
@@ -94,10 +94,10 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `nickname`, `password`, `dateregistered`) VALUES
-(1, 'superjozko98', 'mamradvlaky', '2016-04-05'),
-(2, 'ferobatman', 'pizzapizza', '2016-04-04'),
-(3, 'tyranosaurus27', 'mrkvajefajn11', '2016-04-05'),
-(4, 'd0naldtrumpz', 'alabama123', '2016-04-05');
+(1, 'superjozko98', 'Bh9+eoZOaRZgt0KyjA4HjkFysJo=', '2016-04-05'),
+(2, 'ferobatman', 'Bh9+eoZOaRZgt0KyjA4HjkFysJo=', '2016-04-04'),
+(3, 'tyranosaurus27', 'Bh9+eoZOaRZgt0KyjA4HjkFysJo=', '2016-04-05'),
+(4, 'd0naldtrumpz', 'Bh9+eoZOaRZgt0KyjA4HjkFysJo=', '2016-04-05');
 
 -- --------------------------------------------------------
 

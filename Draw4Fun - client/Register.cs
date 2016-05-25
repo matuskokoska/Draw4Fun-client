@@ -40,28 +40,11 @@ namespace Draw4Fun___client
                 PassHash hash = new PassHash();
                 string encryptedPass;
                 encryptedPass=hash.EncodePasswordToBase64(textBox3.Text);
-                
+
 
                 //test
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:1337/test");
-                httpWebRequest.ContentType = "application/json";
-                httpWebRequest.Method = "POST";
-
-                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
-                {
-                    string json = "{\"nickname\":\""+textBox1.Text+"\"," +
-                                  "\"password\":\""+encryptedPass+"\"}";
-
-                    streamWriter.Write(json);
-                    streamWriter.Flush();
-                    streamWriter.Close();
-                }
-
-                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-                {
-                    var result = streamReader.ReadToEnd();
-                }
+                Request req = new Request();
+                req.registerPost(textBox1.Text,encryptedPass);
                 //end test
 
                 this.Close();

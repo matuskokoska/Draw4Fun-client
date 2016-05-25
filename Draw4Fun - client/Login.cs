@@ -28,6 +28,7 @@ namespace Draw4Fun___client
             }
             else
             {
+
                 this.Hide();
                 Menu menu = new Draw4Fun___client.Menu(textBox1.Text);
                 menu.ShowDialog();

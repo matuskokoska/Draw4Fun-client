@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -10,52 +12,27 @@ namespace Draw4Fun___client
 {
     class Request
     {
-        static void nieco(string[] args)
+        public void registerPost(string nickname,string password)
         {
-            getRequest("http://www.microsoft.com");
-            postRequest("http://posttestserver.com/post.php");
-        }
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:1337/test");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
 
-        async static void getRequest(string url)
-        {
-            using (HttpClient client=new HttpClient())
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                using (HttpResponseMessage response = await client.GetAsync(url))
-                {
-                    using (HttpContent content = response.Content)
-                    {
-                        //string mycontent = await content.ReadAsStringAsync();
-                        HttpContentHeaders headers = content.Headers;
+                string json = "{\"nickname\":\"" + nickname + "\"," +
+                              "\"password\":\"" + password + "\"}";
 
-                        Console.WriteLine(headers);
-                    }
-                }
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
             }
         }
-
-        async static void postRequest(string url)
-        {
-            IEnumerable<KeyValuePair<string, string>> queries = new List<KeyValuePair<string, string>>(){
-                new KeyValuePair<string, string>("query1","jamal"),
-                new KeyValuePair<string, string>("query2", "hussain")
-            };
-
-            HttpContent q = new FormUrlEncodedContent(queries);
-            using (HttpClient client = new HttpClient())
-            {
-                using (HttpResponseMessage response = await client.PostAsync(url,q))
-                {
-                    using (HttpContent content = response.Content)
-                    {
-                        string mycontent = await content.ReadAsStringAsync();
-                        HttpContentHeaders headers = content.Headers;
-
-                        Console.WriteLine(mycontent);
-                    }
-                }
-            }
-        }
-
-
     }
 }
