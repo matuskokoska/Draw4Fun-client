@@ -101,3 +101,10 @@ D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun__
 D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Login.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
+D:\nodejs\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.config
+D:\nodejs\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
+D:\nodejs\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
