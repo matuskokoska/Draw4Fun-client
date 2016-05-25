@@ -30,30 +30,18 @@ namespace Draw4Fun___client
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if ((string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) ||
-                string.IsNullOrEmpty(textBox3.Text) || !checkBox1.Checked) && !textBox2.Text.Equals(textBox3.Text))
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) ||
+                string.IsNullOrEmpty(textBox3.Text) || !checkBox1.Checked)
             {
                 MessageBox.Show("Please fill all the required fields.", "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error); 
             }
             else
             {
-<<<<<<< HEAD
-                PassHash hash = new PassHash();
-                string encryptedPass;
-                encryptedPass=hash.EncodePasswordToBase64(textBox3.Text);
-
-
-                //test
-                Request req = new Request();
-                req.registerPost(textBox1.Text,encryptedPass);
-                //end test
-=======
                 if (!isUsernameValid(textBox1.Text))
                 {
                     MessageBox.Show("Invalid username. Username must contain 3 - 16 characters", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
                 else if (!isPasswordValid(textBox2.Text))
                 {
@@ -70,30 +58,12 @@ namespace Draw4Fun___client
 
 
                     //test
-                    var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:1337/test");
-                    httpWebRequest.ContentType = "application/json";
-                    httpWebRequest.Method = "POST";
-
-                    using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
-                    {
-                        string json = "{\"nickname\":\"" + textBox1.Text + "\"," +
-                                      "\"password\":\"" + encryptedPass + "\"}";
-
-                        streamWriter.Write(json);
-                        streamWriter.Flush();
-                        streamWriter.Close();
-                    }
->>>>>>> 3b553ad58d62d34d2d18e752d096521ecf5853f7
-
-                    var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-                    using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-                    {
-                        var result = streamReader.ReadToEnd();
-                    }
+                    Request req = new Request();
+                    req.registerPost(textBox1.Text, encryptedPass);
                     //end test
 
                     this.Close();
-                }
+               }
                 
             }
         }

@@ -29,12 +29,6 @@ namespace Draw4Fun___client
             }
             else
             {
-<<<<<<< HEAD
-
-                this.Hide();
-                Menu menu = new Draw4Fun___client.Menu(textBox1.Text);
-                menu.ShowDialog();
-=======
                 if (!isUsernameValid(textBox1.Text))
                 {
                     MessageBox.Show("Invalid username. Username must contain 3 - 16 characters", "Error",
@@ -44,12 +38,19 @@ namespace Draw4Fun___client
                     MessageBox.Show("Invalid password. Password must contain 8 - 16 characters.", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 } else {
+                    PassHash hash = new PassHash();
+                    string encryptedPass;
+                    encryptedPass = hash.EncodePasswordToBase64(textBox2.Text);
+
+                    Request req = new Request();
+                    req.loginPost(textBox1.Text,encryptedPass);
+
                     this.Hide();
                     Menu menu = new Draw4Fun___client.Menu(textBox1.Text);
                     menu.ShowDialog();
                 }
                 
->>>>>>> 3b553ad58d62d34d2d18e752d096521ecf5853f7
+
             }
 
         }
