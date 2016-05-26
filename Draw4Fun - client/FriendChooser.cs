@@ -12,13 +12,22 @@ namespace Draw4Fun___client
 {
     public partial class FriendChooser : Form
     {
-
+        private int myId;
         public FriendChooser(int myId)
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             InitializeComponent();
             listBox1.Enabled = false;
+            this.myId = myId;
+            
+        }
+
+        public void initFriendList()
+        {
+            Request req = new Request();
+            req.friendList(myId);
+            //rozparsovat a addnut do listu
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

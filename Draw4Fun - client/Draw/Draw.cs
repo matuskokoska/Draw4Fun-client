@@ -24,11 +24,8 @@ namespace Draw4Fun___client.Draw
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Start();
-<<<<<<< HEAD
+
             label2.Text = word;
-=======
-            label2.Text = wordId + "";
->>>>>>> 624d98219df21ba7a7c7d691c1096ad1289596de
         }
 
         private void panel1_Click(object sender, EventArgs e)

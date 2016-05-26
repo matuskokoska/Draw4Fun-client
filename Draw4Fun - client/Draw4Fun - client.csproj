@@ -116,6 +116,7 @@
     <Compile Include="Score.Designer.cs">
       <DependentUpon>Score.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <Compile Include="WordChooser.cs">
       <SubType>Form</SubType>
     </Compile>
