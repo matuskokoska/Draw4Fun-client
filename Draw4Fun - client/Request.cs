@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections;
+=======
+﻿using Newtonsoft.Json.Linq;
+using System;
+>>>>>>> e183a6d781233a140cf5b72b192437325f28b429
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -55,7 +60,7 @@ namespace Draw4Fun___client
             }
 
             var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-            Console.Write("Response je: " + httpResponse.ToString());
+            //Console.Write("Response je: " + httpResponse.ToString());
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
@@ -88,7 +93,7 @@ namespace Draw4Fun___client
             }
         }*/
 
-        public void getWords()
+        public String getWords()
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/words");
             httpWebRequest.ContentType = "application/json";
@@ -99,7 +104,8 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-                Console.Write("Response 3 je: " + result);
+                return result;
+                //Console.Write("Response 3 je: " + result);
             }
         }
 

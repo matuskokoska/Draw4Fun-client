@@ -35,8 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.categoryLbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.meLbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.hintLbl = new System.Windows.Forms.Label();
             this.opponentLbl = new System.Windows.Forms.Label();
@@ -89,7 +87,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.label2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(271, 32);
+            this.label2.Location = new System.Drawing.Point(18, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 28);
             this.label2.TabIndex = 3;
@@ -101,7 +99,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.label3.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(498, 32);
+            this.label3.Location = new System.Drawing.Point(236, 32);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(337, 28);
             this.label3.TabIndex = 5;
@@ -113,35 +111,11 @@
             this.categoryLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.categoryLbl.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoryLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.categoryLbl.Location = new System.Drawing.Point(841, 32);
+            this.categoryLbl.Location = new System.Drawing.Point(579, 32);
             this.categoryLbl.Name = "categoryLbl";
             this.categoryLbl.Size = new System.Drawing.Size(64, 28);
             this.categoryLbl.TabIndex = 6;
             this.categoryLbl.Text = "easy";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(8, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 28);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Logged in as:";
-            // 
-            // meLbl
-            // 
-            this.meLbl.AutoSize = true;
-            this.meLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.meLbl.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.meLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.meLbl.Location = new System.Drawing.Point(195, 32);
-            this.meLbl.Name = "meLbl";
-            this.meLbl.Size = new System.Drawing.Size(64, 28);
-            this.meLbl.TabIndex = 8;
-            this.meLbl.Text = "Feri";
             // 
             // label4
             // 
@@ -175,7 +149,7 @@
             this.opponentLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.opponentLbl.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opponentLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.opponentLbl.Location = new System.Drawing.Point(419, 32);
+            this.opponentLbl.Location = new System.Drawing.Point(166, 32);
             this.opponentLbl.Name = "opponentLbl";
             this.opponentLbl.Size = new System.Drawing.Size(64, 28);
             this.opponentLbl.TabIndex = 11;
@@ -236,13 +210,11 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.pb_Menu);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.categoryLbl);
             this.groupBox2.Controls.Add(this.opponentLbl);
-            this.groupBox2.Controls.Add(this.meLbl);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
@@ -287,8 +259,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label categoryLbl;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label meLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label hintLbl;
         private System.Windows.Forms.Label opponentLbl;
