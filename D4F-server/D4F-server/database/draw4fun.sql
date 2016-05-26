@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.5.2
 -- http://www.phpmyadmin.net
 --
@@ -73,7 +73,7 @@ INSERT INTO `friendships` (`user1`, `user2`) VALUES
 DROP TABLE IF EXISTS `streams`;
 CREATE TABLE IF NOT EXISTS `streams` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `streambinary` longblob,
+  `streambinary` longtext,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016';
 

@@ -2,13 +2,14 @@ var db = require('./DBconnect.js');
 
 function getCombo(painter, receiver, callback){
   db.query("SELECT count(*) AS count FROM drawings WHERE "
-          +"(painter LIKE '"+painter+" AND reciever LIKE '"+receiver+"'') OR (painter LIKE '"+receiver+" AND reciever LIKE '"+painter+"'')"),
+          +"(painter LIKE '"+painter+"' AND reciever LIKE '"+receiver+"') OR (painter LIKE '"+receiver+"' AND reciever LIKE '"+painter+"')",
           function(result){
+
             var combo=(result[0].count)+1;
             if (typeof callback === "function") {
                         callback(combo);
             }
-          }
+          });
 }
 
 module.exports = {
@@ -38,4 +39,5 @@ module.exports = {
         }
       })
     }
+
 }
