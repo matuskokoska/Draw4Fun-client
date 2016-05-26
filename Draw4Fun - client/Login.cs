@@ -22,6 +22,7 @@ namespace Draw4Fun___client
 
         private void button2_Click(object sender, EventArgs e)
         {
+  
             if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
             {
                 MessageBox.Show("Please fill all the required fields.", "Error",
@@ -43,11 +44,20 @@ namespace Draw4Fun___client
                     encryptedPass = hash.EncodePasswordToBase64(textBox2.Text);
 
                     Request req = new Request();
-                    req.loginPost(textBox1.Text,encryptedPass);
+                    if(req.loginPost(textBox1.Text, encryptedPass))
+                    {
+                        this.Hide();
+                        Menu menu = new Draw4Fun___client.Menu(textBox1.Text);
+                        menu.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error, probably with your Database.", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    
 
-                    this.Hide();
-                    Menu menu = new Draw4Fun___client.Menu(textBox1.Text);
-                    menu.ShowDialog();
+                    
                 }
                 
 
