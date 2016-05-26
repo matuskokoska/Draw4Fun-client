@@ -192,6 +192,12 @@ namespace Draw4Fun___client.Draw
 
         System.Drawing.Drawing2D.GraphicsState transState;
 
+        public static byte[] ImageToByte(Image img)
+        {
+            ImageConverter converter = new ImageConverter();
+            return (byte[])converter.ConvertTo(img, typeof(byte[]));
+        }
+
         private void sendImagetoServer()
         {
             Bitmap bmp = new Bitmap(panel2.Width, panel2.Height);
@@ -200,6 +206,8 @@ namespace Draw4Fun___client.Draw
             g.CopyFromScreen(rect.Location, Point.Empty, panel2.Size);
             g.Dispose();
             bmp.Save("drawedPicture.jpg", ImageFormat.Jpeg);
+            Byte [] binaryFile = ImageToByte(bmp);
+            Console.Write("Binary picture is: "+binaryFile);
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -212,15 +220,8 @@ namespace Draw4Fun___client.Draw
             this.Dispose();
         }
 
-        private void show_btn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //timer1.Enabled = true;
-            //timer1.Start();
             label3.Text = timerDuration.ToString();
             timerDuration--;
             if (timerDuration == -1)

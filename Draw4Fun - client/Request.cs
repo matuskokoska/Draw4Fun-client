@@ -58,9 +58,33 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-               // Console.Write("Response 2 je: " + Boolean.Parse(result));
                 return Boolean.Parse(result);
             }
         }
+
+       /* public bool imagePost(byte[] image, int senderId, int receiverId)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/login");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = "{\"nickname\":\"" + nickname + "\"," +
+                              "\"password\":\"" + password + "\"}";
+
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            Console.Write("Response je: " + httpResponse.ToString());
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                return Boolean.Parse(result);
+            }
+        }*/
     }
 }
