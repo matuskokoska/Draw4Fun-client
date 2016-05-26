@@ -20,7 +20,6 @@ namespace Draw4Fun___client.Guess
         public GuessForm(int myId)
         {
             InitializeComponent();
-            meLbl.Text = myId+"";
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

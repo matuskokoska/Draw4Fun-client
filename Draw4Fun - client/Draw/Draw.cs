@@ -19,13 +19,12 @@ namespace Draw4Fun___client.Draw
         private bool IsPainting = false;
         private int timerDuration = 90;
 
-        public Draw(int friendId, int wordId, int myId)
+        public Draw(int friendId, int wordId, int myId, String word)
         {
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Start();
-            meLbl.Text = myId + "";
-            label2.Text = wordId + "";
+            label2.Text = word;
         }
 
         private void panel1_Click(object sender, EventArgs e)
