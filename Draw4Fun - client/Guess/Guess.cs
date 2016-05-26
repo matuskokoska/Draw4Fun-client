@@ -14,15 +14,13 @@ namespace Draw4Fun___client.Guess
 {
     public partial class GuessForm : Form
     {
-        //private String opponent;
-        //private String hint;
         private String guess;
         private String json;
 
-        public GuessForm(String loggedIn)
+        public GuessForm(int myId)
         {
             InitializeComponent();
-            meLbl.Text = loggedIn;
+            meLbl.Text = myId+"";
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -36,9 +34,8 @@ namespace Draw4Fun___client.Guess
         }
 
         private void SubmitGuess()
-        {
-            
-            guess = "{'guess':'"+guessBox.Text+"'}";
+        {   
+            guess = "{\"guess\":\""+guessBox.Text+"\"}";
             json = JsonConvert.SerializeObject(guess);
             Console.Write("JSON:"+json);
         }

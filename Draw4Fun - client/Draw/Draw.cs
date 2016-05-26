@@ -13,20 +13,19 @@ using System.Windows.Forms;
 namespace Draw4Fun___client.Draw
 {
     public partial class  Draw : Form
-    {
-        private String username;
+    { 
         private SolidBrush myBrush;
         private Graphics myGraphics;
         private bool IsPainting = false;
         private int timerDuration = 90;
 
-        public Draw(String username)
+        public Draw(int friendId, int wordId, int myId)
         {
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Start();
-            this.username = username;
-            meLbl.Text = username;
+            meLbl.Text = myId + "";
+            label2.Text = wordId + "";
         }
 
         private void panel1_Click(object sender, EventArgs e)
