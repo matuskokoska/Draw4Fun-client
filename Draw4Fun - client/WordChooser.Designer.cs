@@ -90,10 +90,8 @@
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "radioButton5";
             this.radioButton5.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
-=======
+
             this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
->>>>>>> e183a6d781233a140cf5b72b192437325f28b429
             // 
             // radioButton4
             // 
@@ -149,10 +147,8 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
-=======
+
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
->>>>>>> e183a6d781233a140cf5b72b192437325f28b429
             // 
             // WordChooser
             // 

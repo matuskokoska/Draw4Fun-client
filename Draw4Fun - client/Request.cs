@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-﻿using System;
+using System;
 using System.Collections;
-=======
 ﻿using Newtonsoft.Json.Linq;
 using System;
->>>>>>> e183a6d781233a140cf5b72b192437325f28b429
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

@@ -20,7 +20,6 @@ namespace Draw4Fun___client.Guess
         public GuessForm(int myId)
         {
             InitializeComponent();
-            meLbl.Text = myId+"";
             string picture;
 
             //there will be method to get string of image

@@ -24,7 +24,6 @@ namespace Draw4Fun___client.Draw
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Start();
-            meLbl.Text = myId + "";
             label2.Text = wordId + "";
         }
 
