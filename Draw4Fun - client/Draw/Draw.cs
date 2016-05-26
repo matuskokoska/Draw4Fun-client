@@ -191,10 +191,19 @@ namespace Draw4Fun___client.Draw
 
         System.Drawing.Drawing2D.GraphicsState transState;
 
-        public static byte[] ImageToByte(Image img)
+        public string ImageToBase64(Image image,
+        System.Drawing.Imaging.ImageFormat format)
         {
-            ImageConverter converter = new ImageConverter();
-            return (byte[])converter.ConvertTo(img, typeof(byte[]));
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // Convert Image to byte[]
+                image.Save(ms, format);
+                byte[] imageBytes = ms.ToArray();
+
+                // Convert byte[] to Base64 String
+                string base64String = Convert.ToBase64String(imageBytes);
+                return base64String;
+            }
         }
 
         private void sendImagetoServer()
@@ -205,8 +214,8 @@ namespace Draw4Fun___client.Draw
             g.CopyFromScreen(rect.Location, Point.Empty, panel2.Size);
             g.Dispose();
             bmp.Save("drawedPicture.jpg", ImageFormat.Jpeg);
-            Byte [] binaryFile = ImageToByte(bmp);
-            Console.Write("Binary picture is: "+binaryFile);
+            string binaryFile = ImageToBase64(bmp,ImageFormat.Jpeg);
+            Console.Write("Binary picture is: " + binaryFile);
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
