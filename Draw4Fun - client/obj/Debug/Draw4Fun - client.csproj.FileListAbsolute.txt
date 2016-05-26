@@ -109,3 +109,4 @@ D:\nodejs\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.conf
 D:\nodejs\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
 D:\nodejs\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources

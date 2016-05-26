@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Draw));
-            this.oppL = new System.Windows.Forms.Label();
-            this.meLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
@@ -77,30 +75,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // oppL
-            // 
-            this.oppL.AutoSize = true;
-            this.oppL.BackColor = System.Drawing.Color.Transparent;
-            this.oppL.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.oppL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.oppL.Location = new System.Drawing.Point(19, 37);
-            this.oppL.Name = "oppL";
-            this.oppL.Size = new System.Drawing.Size(181, 28);
-            this.oppL.TabIndex = 4;
-            this.oppL.Text = "Logged In as:";
-            // 
-            // meLbl
-            // 
-            this.meLbl.AutoSize = true;
-            this.meLbl.BackColor = System.Drawing.Color.Transparent;
-            this.meLbl.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.meLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.meLbl.Location = new System.Drawing.Point(206, 37);
-            this.meLbl.Name = "meLbl";
-            this.meLbl.Size = new System.Drawing.Size(64, 28);
-            this.meLbl.TabIndex = 7;
-            this.meLbl.Text = "Feri";
             // 
             // label1
             // 
@@ -469,8 +443,6 @@
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.pictureBox3);
-            this.groupBox4.Controls.Add(this.oppL);
-            this.groupBox4.Controls.Add(this.meLbl);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -553,9 +525,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label oppL;
-        private System.Windows.Forms.Label meLbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TrackBar trackBar1;
