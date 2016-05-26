@@ -38,7 +38,7 @@ namespace Draw4Fun___client.Guess
         private void SubmitGuess()
         {
             
-            guess = "{'guess':'"+guessBox.Text+"'}";
+            guess = "{\"guess\":\""+guessBox.Text+"\"}";
             json = JsonConvert.SerializeObject(guess);
             Console.Write("JSON:"+json);
         }

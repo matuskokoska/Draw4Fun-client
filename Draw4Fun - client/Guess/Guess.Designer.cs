@@ -58,7 +58,7 @@
             this.pb_Canvas.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_Canvas.BackColor = System.Drawing.Color.White;
             this.pb_Canvas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_Canvas.Location = new System.Drawing.Point(130, 132);
+            this.pb_Canvas.Location = new System.Drawing.Point(130, 120);
             this.pb_Canvas.Name = "pb_Canvas";
             this.pb_Canvas.Size = new System.Drawing.Size(1000, 500);
             this.pb_Canvas.TabIndex = 0;
@@ -68,11 +68,11 @@
             // 
             this.guessLabel.AutoSize = true;
             this.guessLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
-            this.guessLabel.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guessLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guessLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
             this.guessLabel.Location = new System.Drawing.Point(19, 41);
             this.guessLabel.Name = "guessLabel";
-            this.guessLabel.Size = new System.Drawing.Size(144, 27);
+            this.guessLabel.Size = new System.Drawing.Size(141, 29);
             this.guessLabel.TabIndex = 1;
             this.guessLabel.Text = "Your guess:";
             // 
@@ -148,11 +148,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.label4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label4.Font = new System.Drawing.Font("Data Control", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(777, 16);
+            this.label4.Location = new System.Drawing.Point(844, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 27);
+            this.label4.Size = new System.Drawing.Size(61, 29);
             this.label4.TabIndex = 9;
             this.label4.Text = "Hint:";
             // 
@@ -161,11 +161,11 @@
             this.hintLbl.AutoSize = true;
             this.hintLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.hintLbl.Dock = System.Windows.Forms.DockStyle.Right;
-            this.hintLbl.Font = new System.Drawing.Font("Data Control", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hintLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hintLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.hintLbl.Location = new System.Drawing.Point(849, 16);
+            this.hintLbl.Location = new System.Drawing.Point(905, 16);
             this.hintLbl.Name = "hintLbl";
-            this.hintLbl.Size = new System.Drawing.Size(416, 30);
+            this.hintLbl.Size = new System.Drawing.Size(360, 31);
             this.hintLbl.TabIndex = 10;
             this.hintLbl.Text = "You can find it in the kitchen.";
             // 
@@ -186,7 +186,7 @@
             this.pb_Logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pb_Logo.BackColor = System.Drawing.Color.Transparent;
             this.pb_Logo.Image = global::Draw4Fun___client.Properties.Resources.guessing;
-            this.pb_Logo.Location = new System.Drawing.Point(12, 478);
+            this.pb_Logo.Location = new System.Drawing.Point(12, 454);
             this.pb_Logo.Name = "pb_Logo";
             this.pb_Logo.Size = new System.Drawing.Size(210, 220);
             this.pb_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -227,7 +227,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.hintLbl);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.Location = new System.Drawing.Point(0, 704);
+            this.groupBox1.Location = new System.Drawing.Point(0, 680);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1268, 100);
             this.groupBox1.TabIndex = 18;
@@ -256,7 +256,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Draw4Fun___client.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(1268, 804);
+            this.ClientSize = new System.Drawing.Size(1268, 780);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pb_Canvas);

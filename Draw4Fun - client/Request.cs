@@ -62,5 +62,20 @@ namespace Draw4Fun___client
                 return Boolean.Parse(result);
             }
         }
+
+        public void getWords()
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/words");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "GET";
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                Console.Write("Response 3 je: " + result);
+            }
+        }
     }
 }
