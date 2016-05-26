@@ -12,29 +12,25 @@ namespace Draw4Fun___client
 {
     public partial class Menu : Form
     {
-        private String username;
 
-        public Menu(String username)
+        public static int myId;
+
+        public Menu(int myId)
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             InitializeComponent();
-            this.username = username;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //TODO: Jak je dole ten friends button --- po kliknuti by mohlo otvorit tamto kde by vyzve kamarata na hru // odpoveda na vyzvu a hada
-            /*Draw.Draw draw = new Draw.Draw();
-            draw.ShowDialog();*/
-            FriendChooser chooser = new FriendChooser(username);
+            FriendChooser chooser = new FriendChooser(myId);
             chooser.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //TODO: tym padom ked to zrealizujeme jak ^ je spominane tento button netreba
-            Guess.GuessForm guess = new Guess.GuessForm(username);
+            Guess.GuessForm guess = new Guess.GuessForm(myId);
             guess.ShowDialog();
         }
 
