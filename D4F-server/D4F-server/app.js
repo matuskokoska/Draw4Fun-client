@@ -11,6 +11,7 @@ var login = require('./routes/login');
 var register = require('./routes/register');
 var logout = require('./routes/logout');
 var users = require('./routes/users');
+var words = require('./routes/words');
 
 var app = express();
 app.listen(9797, function (){
@@ -35,6 +36,7 @@ app.use('/login', login);
 app.use('/register', register);
 app.use('/logout', logout);
 app.use('/users', users);
+app.use('/words', words);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
