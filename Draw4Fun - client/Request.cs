@@ -62,16 +62,15 @@ namespace Draw4Fun___client
             }
         }
 
-       /* public bool imagePost(byte[] image, int senderId, int receiverId)
+        public void imagePost(string image)
         {
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/login");
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/test");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = "{\"nickname\":\"" + nickname + "\"," +
-                              "\"password\":\"" + password + "\"}";
+                string json = "{\"draw\":\"" + image + "\"}";
 
                 streamWriter.Write(json);
                 streamWriter.Flush();
@@ -82,10 +81,9 @@ namespace Draw4Fun___client
             Console.Write("Response je: " + httpResponse.ToString());
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
-                var result = streamReader.ReadToEnd();
-                return Boolean.Parse(result);
+                var result = streamReader.ReadToEnd();               
             }
-        }*/
+        }
 
         public void getWords()
         {
