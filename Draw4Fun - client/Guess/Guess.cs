@@ -20,6 +20,8 @@ namespace Draw4Fun___client.Guess
         public GuessForm(int myId)
         {
             InitializeComponent();
+<<<<<<< HEAD
+=======
             string picture;
 
             //there will be method to get string of image
@@ -38,6 +40,7 @@ namespace Draw4Fun___client.Guess
             ms.Write(imageBytes, 0, imageBytes.Length);
             Image image = Image.FromStream(ms, true);
             return image;
+>>>>>>> 624d98219df21ba7a7c7d691c1096ad1289596de
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

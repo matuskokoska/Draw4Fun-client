@@ -14,16 +14,17 @@ namespace Draw4Fun___client
 {
     public partial class WordChooser : Form
     {
-        private int friendId;
         private int wordId;
-        private string guessedWord { get; set; }
+        private int friendId;
+        private String word;
+        private GuessWord guessWord;
+        private List<GuessWord> wordsList = new List<GuessWord>();
 
         public WordChooser(int friendId)
         {
             InitializeComponent();
             initWords();
             this.friendId = friendId;
-            
 
         }
 
@@ -39,7 +40,10 @@ namespace Draw4Fun___client
                 int id = data[i].id;
                 String word = data[i].word;
                 int category = data[i].category;
- 
+
+                guessWord = new GuessWord(id, word, category);
+                wordsList.Add(guessWord);
+
                 switch (i)
                 {
                     case 0: radioButton1.Text = word; break;
@@ -52,39 +56,42 @@ namespace Draw4Fun___client
             
         }
 
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            var checkedButton = groupBox1.Controls.OfType<RadioButton>()
-                                      .FirstOrDefault(r => r.Checked);
-            Console.WriteLine("STLACIL SI: " + checkedButton);
-
+            Draw.Draw draw = new Draw.Draw(friendId, wordId, Login.myId, word);
+            this.Dispose();
+            draw.ShowDialog();
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            //Draw.Draw draw = new Draw.Draw(friendId, wordId, Login.myId);
-            //this.Dispose();
-            //draw.ShowDialog();
+            wordId = wordsList[0].getId();
+            word = wordsList[0].getWord();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
+            wordId = wordsList[1].getId();
+            word = wordsList[1].getWord();
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-
+            wordId = wordsList[2].getId();
+            word = wordsList[2].getWord();
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-
+            wordId = wordsList[3].getId();
+            word = wordsList[3].getWord();
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
-
+            wordId = wordsList[4].getId();
+            word = wordsList[4].getWord();
         }
     }
 }

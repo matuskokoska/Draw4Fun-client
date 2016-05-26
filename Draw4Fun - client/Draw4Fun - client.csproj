@@ -69,6 +69,7 @@
     <Compile Include="Friends.Designer.cs">
       <DependentUpon>Friends.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuessWord.cs" />
     <Compile Include="PassHash.cs" />
     <Compile Include="Request.cs" />
     <Compile Include="Draw\Draw.cs">
