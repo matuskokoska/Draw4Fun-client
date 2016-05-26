@@ -24,7 +24,11 @@ namespace Draw4Fun___client.Draw
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Start();
+<<<<<<< HEAD
             label2.Text = word;
+=======
+            label2.Text = wordId + "";
+>>>>>>> 624d98219df21ba7a7c7d691c1096ad1289596de
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -213,8 +217,13 @@ namespace Draw4Fun___client.Draw
             g.CopyFromScreen(rect.Location, Point.Empty, panel2.Size);
             g.Dispose();
             bmp.Save("drawedPicture.jpg", ImageFormat.Jpeg);
+
             string binaryFile = ImageToBase64(bmp,ImageFormat.Jpeg);
             Console.Write("Binary picture is: " + binaryFile);
+
+            Request req = new Request();
+            req.imagePost(binaryFile);
+
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

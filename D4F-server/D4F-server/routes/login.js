@@ -7,9 +7,12 @@ router.post('/', function (req, res) {
     var nickname = req.body.nickname;
     var password = req.body.password;
     var login = require(appRoot + "/API/login");
-	login.login(nickname, password, function (success) {
+	login.login(nickname, password, function (success,id) {
 		console.log(success);
-		res.json(success);
+		res.json({
+      "success":success,
+      "id": id
+    });
 	});
 });
 

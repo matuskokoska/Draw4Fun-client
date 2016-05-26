@@ -68,8 +68,7 @@ namespace Draw4Fun___client
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string newusername;
-            newusername = textBox1.Text;
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
