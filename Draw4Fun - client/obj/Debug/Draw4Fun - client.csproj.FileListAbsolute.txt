@@ -109,3 +109,13 @@ D:\nodejs\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.conf
 D:\nodejs\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
 D:\nodejs\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
 C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Login.resources
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.FriendChooser.resources
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
+C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
