@@ -13,20 +13,18 @@ using System.Windows.Forms;
 namespace Draw4Fun___client.Draw
 {
     public partial class  Draw : Form
-    {
-        private String username;
+    { 
         private SolidBrush myBrush;
         private Graphics myGraphics;
         private bool IsPainting = false;
         private int timerDuration = 90;
 
-        public Draw(String username)
+        public Draw(int friendId, int wordId, int myId)
         {
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Start();
-            this.username = username;
-            meLbl.Text = username;
+            label2.Text = wordId + "";
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -192,6 +190,21 @@ namespace Draw4Fun___client.Draw
 
         System.Drawing.Drawing2D.GraphicsState transState;
 
+        public string ImageToBase64(Image image,
+        System.Drawing.Imaging.ImageFormat format)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // Convert Image to byte[]
+                image.Save(ms, format);
+                byte[] imageBytes = ms.ToArray();
+
+                // Convert byte[] to Base64 String
+                string base64String = Convert.ToBase64String(imageBytes);
+                return base64String;
+            }
+        }
+
         private void sendImagetoServer()
         {
             Bitmap bmp = new Bitmap(panel2.Width, panel2.Height);
@@ -200,6 +213,13 @@ namespace Draw4Fun___client.Draw
             g.CopyFromScreen(rect.Location, Point.Empty, panel2.Size);
             g.Dispose();
             bmp.Save("drawedPicture.jpg", ImageFormat.Jpeg);
+
+            string binaryFile = ImageToBase64(bmp,ImageFormat.Jpeg);
+            Console.Write("Binary picture is: " + binaryFile);
+
+            Request req = new Request();
+            req.imagePost(binaryFile);
+
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -212,15 +232,8 @@ namespace Draw4Fun___client.Draw
             this.Dispose();
         }
 
-        private void show_btn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //timer1.Enabled = true;
-            //timer1.Start();
             label3.Text = timerDuration.ToString();
             timerDuration--;
             if (timerDuration == -1)

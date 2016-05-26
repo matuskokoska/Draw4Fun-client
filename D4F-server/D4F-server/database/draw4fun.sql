@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.5.2
 -- http://www.phpmyadmin.net
 --
 -- Hostiteľ: 127.0.0.1
--- Čas generovania: Ne 22.Máj 2016, 22:40
--- Verzia serveru: 5.6.17
--- Verzia PHP: 5.5.12
+-- Čas generovania: Št 26.Máj 2016, 09:00
+-- Verzia serveru: 5.7.9
+-- Verzia PHP: 5.6.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Databáza: `draw4fun`
@@ -26,17 +26,18 @@ SET time_zone = "+00:00";
 -- Štruktúra tabuľky pre tabuľku `drawings`
 --
 
+DROP TABLE IF EXISTS `drawings`;
 CREATE TABLE IF NOT EXISTS `drawings` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `wordid` int(10) unsigned NOT NULL,
-  `painter` int(10) unsigned NOT NULL,
-  `reciever` int(10) unsigned NOT NULL,
-  `combo` int(10) unsigned NOT NULL,
-  `state` int(10) unsigned NOT NULL COMMENT '0 - PENDING, 1 - UNSUCCESSFUL GUESS, 2 - SUCCESSFUL GUESS',
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `wordid` int(10) UNSIGNED NOT NULL,
+  `painter` int(10) UNSIGNED NOT NULL,
+  `reciever` int(10) UNSIGNED NOT NULL,
+  `combo` int(10) UNSIGNED NOT NULL,
+  `state` int(10) UNSIGNED NOT NULL COMMENT '0 - PENDING, 1 - UNSUCCESSFUL GUESS, 2 - SUCCESSFUL GUESS',
   `datepainted` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016';
 
 -- --------------------------------------------------------
 
@@ -44,9 +45,10 @@ CREATE TABLE IF NOT EXISTS `drawings` (
 -- Štruktúra tabuľky pre tabuľku `friendships`
 --
 
+DROP TABLE IF EXISTS `friendships`;
 CREATE TABLE IF NOT EXISTS `friendships` (
-  `user1` int(10) unsigned NOT NULL,
-  `user2` int(10) unsigned NOT NULL,
+  `user1` int(10) UNSIGNED NOT NULL,
+  `user2` int(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`user1`,`user2`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016';
 
@@ -68,11 +70,12 @@ INSERT INTO `friendships` (`user1`, `user2`) VALUES
 -- Štruktúra tabuľky pre tabuľku `streams`
 --
 
+DROP TABLE IF EXISTS `streams`;
 CREATE TABLE IF NOT EXISTS `streams` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `streambinary` longblob,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016';
 
 -- --------------------------------------------------------
 
@@ -80,24 +83,24 @@ CREATE TABLE IF NOT EXISTS `streams` (
 -- Štruktúra tabuľky pre tabuľku `users`
 --
 
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `nickname` varchar(15) COLLATE utf8_bin NOT NULL,
-  `password` varchar(15) COLLATE utf8_bin NOT NULL,
-  `dateregistered` date NOT NULL,
+  `password` varchar(50) COLLATE utf8_bin NOT NULL,
+  `dateregistered` date DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `nickname` (`nickname`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016' AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016';
 
 --
 -- Sťahujem dáta pre tabuľku `users`
 --
 
 INSERT INTO `users` (`id`, `nickname`, `password`, `dateregistered`) VALUES
-(1, 'superjozko98', 'mamradvlaky', '2016-04-05'),
-(2, 'ferobatman', 'pizzapizza', '2016-04-04'),
-(3, 'tyranosaurus27', 'mrkvajefajn11', '2016-04-05'),
-(4, 'd0naldtrumpz', 'alabama123', '2016-04-05');
+(5, 'MarekJeDrzy', 'Bh9+eoZOaRZgt0KyjA4HjkFysJo=', NULL),
+(6, 'Pomaranc', 'Bh9+eoZOaRZgt0KyjA4HjkFysJo=', NULL),
+(7, 'marekSibal', 'Bh9+eoZOaRZgt0KyjA4HjkFysJo=', NULL);
 
 -- --------------------------------------------------------
 
@@ -105,12 +108,13 @@ INSERT INTO `users` (`id`, `nickname`, `password`, `dateregistered`) VALUES
 -- Štruktúra tabuľky pre tabuľku `wordcategories`
 --
 
+DROP TABLE IF EXISTS `wordcategories`;
 CREATE TABLE IF NOT EXISTS `wordcategories` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(15) COLLATE utf8_bin NOT NULL,
-  `points` int(10) unsigned NOT NULL,
+  `points` int(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016' AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016';
 
 --
 -- Sťahujem dáta pre tabuľku `wordcategories`
@@ -129,13 +133,14 @@ INSERT INTO `wordcategories` (`id`, `name`, `points`) VALUES
 -- Štruktúra tabuľky pre tabuľku `words`
 --
 
+DROP TABLE IF EXISTS `words`;
 CREATE TABLE IF NOT EXISTS `words` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `word` varchar(15) COLLATE utf8_bin NOT NULL,
-  `category` int(10) unsigned NOT NULL,
+  `category` int(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `word` (`word`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016' AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Created by Matúš Kokoška - 05.04.2016';
 
 --
 -- Sťahujem dáta pre tabuľku `words`

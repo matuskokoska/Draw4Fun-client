@@ -1,4 +1,7 @@
-﻿using System;
+using System;
+using System.Collections;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -54,16 +57,38 @@ namespace Draw4Fun___client
             }
 
             var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-            Console.Write("Response je: " + httpResponse.ToString());
+            //Console.Write("Response je: " + httpResponse.ToString());
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-               // Console.Write("Response 2 je: " + Boolean.Parse(result));
                 return Boolean.Parse(result);
             }
         }
 
-        public void getWords()
+        public void imagePost(string image)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/test");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = "{\"draw\":\"" + image + "\"}";
+
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            Console.Write("Response je: " + httpResponse.ToString());
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();               
+            }
+        }
+
+        public String getWords()
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/words");
             httpWebRequest.ContentType = "application/json";
@@ -74,8 +99,32 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-                Console.Write("Response 3 je: " + result);
+                return result;
+                //Console.Write("Response 3 je: " + result);
             }
         }
+
+        public void friendList(int id)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/friendships");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = "{\"id\":\"" + id + "\",}";
+
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+            }
+        }
+
     }
 }
