@@ -38,6 +38,22 @@ module.exports = {
               callback(success);
         }
       })
+    },
+    get: function(receiver, callback){
+      db.query("SELECT drawings.id AS id, word, users.id AS painterid, nickname, datepainted FROM drawings "+
+      "INNER JOIN users ON drawings.painter=users.id INNER JOIN words ON words.id=drawings.wordid "+
+      "WHERE reciever="+receiver+" AND state=0", function(results){
+        if (typeof callback === "function") {
+              callback(results);
+        }
+      });
+    },
+    getStream: function(id, callback){
+      db.query("SELECT streambinary FROM streams WHERE id="+id, function(results){
+        if (typeof callback === "function") {
+              callback(results);
+        }
+      });
     }
 
 }

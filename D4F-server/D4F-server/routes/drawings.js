@@ -15,6 +15,20 @@ router.post('/new', function (req, res) {
 	});
 });
 
+router.post('/get', function(req, res){
+    var userid = req.body.userid;
+    drawings.get(userid,function(results){
+      res.json(results);
+    })
+});
+
+router.post('/stream', function(req, res){
+    var id = req.body.id;
+    drawings.getStream(id,function(results){
+      res.json(results);
+    })
+});
+
 
 
 module.exports = router;

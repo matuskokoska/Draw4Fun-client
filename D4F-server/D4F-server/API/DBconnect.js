@@ -24,7 +24,7 @@ module.exports = {
 					callback(true);
 				}
 			}
-			console.error(result);
+			//console.error(result);
 		});
 	},
 
@@ -41,7 +41,7 @@ module.exports = {
 					callback(true);
 				}
 			}
-			console.error(result);
+			//console.error(result);
         });
 
 	},
