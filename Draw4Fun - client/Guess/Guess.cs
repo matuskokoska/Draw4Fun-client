@@ -15,19 +15,20 @@ namespace Draw4Fun___client.Guess
     public partial class GuessForm : Form
     {
         private String guess;
+        string picture;
 
         public GuessForm()
         {
             InitializeComponent();
 
-            string picture;
+            
 
             //there will be method to get string of image
-            picture ="";
-            pb_Canvas.Image =stringToImage(picture);
+           /* picture ="";
+            pb_Canvas.Image =stringToImage(picture);*/
         }
 
-        public Image stringToImage(string base64String)
+       /* public Image stringToImage(string base64String)
         {
             // Convert Base64 String to byte[]
             byte[] imageBytes = Convert.FromBase64String(base64String);
@@ -38,7 +39,7 @@ namespace Draw4Fun___client.Guess
             ms.Write(imageBytes, 0, imageBytes.Length);
             Image image = Image.FromStream(ms, true);
             return image;
-        }
+        }*/
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {

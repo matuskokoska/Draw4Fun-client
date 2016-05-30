@@ -20,15 +20,18 @@ namespace Draw4Fun___client.Draw
         private int timerDuration = 90;
         private int wordId;
         private int friendId;
+        private int userId;
 
         public Draw(int friendId, int wordId, String word)
         {
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Start();
+
             label2.Text = word;
             this.wordId = wordId;
             this.friendId = friendId;
+            this.userId=User.id;         
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -217,16 +220,15 @@ namespace Draw4Fun___client.Draw
             bmp.Save("drawedPicture.jpg", ImageFormat.Jpeg);
 
             string binaryFile = ImageToBase64(bmp,ImageFormat.Jpeg);
-            Console.Write("Binary picture is: " + binaryFile);
 
             Request req = new Request();
-            req.imagePost(binaryFile);
+            req.imagePost(wordId,userId,friendId,binaryFile);
 
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            sendImagetoServer();
+            sendImagetoServer();           
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
