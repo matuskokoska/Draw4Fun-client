@@ -18,14 +18,17 @@ namespace Draw4Fun___client.Draw
         private Graphics myGraphics;
         private bool IsPainting = false;
         private int timerDuration = 90;
+        private int wordId;
+        private int friendId;
 
         public Draw(int friendId, int wordId, String word)
         {
             InitializeComponent();
             timer1.Enabled = true;
             timer1.Start();
-
             label2.Text = word;
+            this.wordId = wordId;
+            this.friendId = friendId;
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -188,8 +191,6 @@ namespace Draw4Fun___client.Draw
             myBrush.Color = Color.Black;
             panel1.BackColor = Color.Black;
         }
-
-        System.Drawing.Drawing2D.GraphicsState transState;
 
         public string ImageToBase64(Image image,
         System.Drawing.Imaging.ImageFormat format)
