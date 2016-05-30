@@ -62,11 +62,11 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-                Console.WriteLine("RESULT: " + result);
+                
                 dynamic data = JsonConvert.DeserializeObject(result);
                 Boolean success = data.success;
                 User.id = data.id;
-                Console.WriteLine("IDCKO: " + User.id);
+                
                 return success;
             }
         }

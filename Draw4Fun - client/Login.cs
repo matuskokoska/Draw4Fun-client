@@ -13,7 +13,6 @@ namespace Draw4Fun___client
 {
     public partial class Login : Form
     {
-        public static int myId=1;
 
         public Login()
         {
@@ -49,7 +48,7 @@ namespace Draw4Fun___client
                     if(req.loginPost(textBox1.Text, encryptedPass))
                     {
                         this.Hide();
-                        Menu menu = new Draw4Fun___client.Menu(myId);
+                        Menu menu = new Draw4Fun___client.Menu();
                         menu.ShowDialog();
                     }
                     else

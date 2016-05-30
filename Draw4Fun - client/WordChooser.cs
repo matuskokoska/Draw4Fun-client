@@ -59,7 +59,7 @@ namespace Draw4Fun___client
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Draw.Draw draw = new Draw.Draw(friendId, wordId, Login.myId, word);
+            Draw.Draw draw = new Draw.Draw(friendId, wordId, word);
             this.Dispose();
             draw.ShowDialog();
         }

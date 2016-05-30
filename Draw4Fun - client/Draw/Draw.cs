@@ -19,7 +19,7 @@ namespace Draw4Fun___client.Draw
         private bool IsPainting = false;
         private int timerDuration = 90;
 
-        public Draw(int friendId, int wordId, int myId, String word)
+        public Draw(int friendId, int wordId, String word)
         {
             InitializeComponent();
             timer1.Enabled = true;

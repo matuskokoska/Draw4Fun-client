@@ -13,9 +13,7 @@ namespace Draw4Fun___client
     public partial class Menu : Form
     {
 
-        public static int myId;
-
-        public Menu(int myId)
+        public Menu()
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -24,13 +22,13 @@ namespace Draw4Fun___client
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FriendChooser chooser = new FriendChooser(myId);
+            FriendChooser chooser = new FriendChooser();
             chooser.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Guess.GuessForm guess = new Guess.GuessForm(myId);
+            Guess.GuessForm guess = new Guess.GuessForm();
             guess.ShowDialog();
         }
 

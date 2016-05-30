@@ -16,7 +16,7 @@ namespace Draw4Fun___client.Guess
     {
         private String guess;
 
-        public GuessForm(int myId)
+        public GuessForm()
         {
             InitializeComponent();
 
