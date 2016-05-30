@@ -1,6 +1,6 @@
 using System;
 using System.Collections;
-﻿using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Draw4Fun___client
 {
@@ -61,7 +62,12 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-                return Boolean.Parse(result);
+                Console.WriteLine("RESULT: " + result);
+                dynamic data = JsonConvert.DeserializeObject(result);
+                Boolean success = data.success;
+                User.id = data.id;
+                Console.WriteLine("IDCKO: " + User.id);
+                return success;
             }
         }
 

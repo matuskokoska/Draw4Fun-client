@@ -6,23 +6,13 @@ using System.Threading.Tasks;
 
 namespace Draw4Fun___client
 {
-    class User
+    public class User
     {
-        private int id;
-        private String username;
-        
-        public User(int id, String username)
-        {
-            this.id = id;
-            this.username = username;
-        }
+        private static User user = new User();
+        public static int id;
 
-        private void setId(int id) { this.id = id; }
-        private void setUsername(String username) { this.username = username}
+        private User(){}
 
-        private int getId() { return id; }
-        private String getusername() { return username; }
-        
-
+        public static User getUser() { return user; }
     }
 }
