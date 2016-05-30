@@ -42,9 +42,20 @@ namespace Draw4Fun___client
         {
             if ((radioButton2.Checked && listBox1.SelectedIndex != -1) || radioButton1.Checked)
             {
-                WordChooser wordChooser = new WordChooser(1);
+                WordChooser wordChooser;
+                //ak je zvoleny random tak 0 
+                if (radioButton1.Checked) { 
+                    wordChooser = new WordChooser(0);
+                    wordChooser.ShowDialog();
+                }
+                //inac sa to nastavi podla id daneho frienda
+                else
+                {
+                    //wordChooser = new WordChooser();  nejake cislo frienda
+                    //wordChooser.ShowDialog();
+                }
                 this.Dispose();
-                wordChooser.ShowDialog();
+                
             }
             else
             {
