@@ -58,8 +58,9 @@ namespace Draw4Fun___client
 
                     Request req = new Request();
                     req.registerPost(textBox1.Text, encryptedPass);
-                    MessageBox.Show("Your registration is now done.", "Congratulation");
 
+                    MessageReport msg = new MessageReport("Successfully registered.");
+                    msg.Show();
                     this.Close();
                }
                 

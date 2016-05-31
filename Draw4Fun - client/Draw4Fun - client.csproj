@@ -70,6 +70,12 @@
       <DependentUpon>Friends.cs</DependentUpon>
     </Compile>
     <Compile Include="GuessWord.cs" />
+    <Compile Include="MessageReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageReport.Designer.cs">
+      <DependentUpon>MessageReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="PassHash.cs" />
     <Compile Include="Request.cs" />
     <Compile Include="Draw\Draw.cs">
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageReport.resx">
+      <DependentUpon>MessageReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>

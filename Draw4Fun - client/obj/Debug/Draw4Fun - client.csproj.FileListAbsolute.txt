@@ -121,3 +121,4 @@ C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
 >>>>>>> 6e81ca459fb11a3ea1fff3be64f09c50c635a3d5
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.MessageReport.resources

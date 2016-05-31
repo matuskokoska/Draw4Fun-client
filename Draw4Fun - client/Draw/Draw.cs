@@ -223,12 +223,15 @@ namespace Draw4Fun___client.Draw
 
             Request req = new Request();
             req.imagePost(wordId,userId,friendId,binaryFile);
-
+            MessageReport msg = new MessageReport("Picture was sent.");
+            msg.Show();
+            this.Close();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            sendImagetoServer();           
+            sendImagetoServer();
+                       
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
