@@ -230,8 +230,7 @@ namespace Draw4Fun___client.Draw
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            sendImagetoServer();
-                       
+            sendImagetoServer();                     
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
