@@ -16,16 +16,17 @@ namespace Draw4Fun___client.Guess
     {
         private String guess;
         string picture;
+        private int timerDuration = 30;
 
         public GuessForm()
         {
             InitializeComponent();
-
-            
+            timer1.Enabled = true;
+            timer1.Start();
 
             //there will be method to get string of image
-           /* picture ="";
-            pb_Canvas.Image =stringToImage(picture);*/
+            /* picture ="";
+             pb_Canvas.Image =stringToImage(picture);*/
         }
 
        /* public Image stringToImage(string base64String)
@@ -48,7 +49,7 @@ namespace Draw4Fun___client.Guess
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            SubmitGuess();
+            sendToServer();
         }
 
         private void SubmitGuess()
@@ -58,6 +59,37 @@ namespace Draw4Fun___client.Guess
             req.guessPost(guess);
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void sendToServer()
+        {
+            timer1.Stop();
+            if (guessBox.Text == "")
+            {
+                MessageReport msg = new MessageReport("Empty field");
+                msg.Show();
+                this.Close();
+            }
+            else
+            {
+                SubmitGuess();
+                MessageReport msg = new MessageReport("Successful send");
+                msg.Show();
+                this.Close();
+            }
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = timerDuration.ToString();
+            timerDuration--;
+            if (timerDuration == -1)
+            {
+                sendToServer();
+            }
+        }
     }
 
 }
