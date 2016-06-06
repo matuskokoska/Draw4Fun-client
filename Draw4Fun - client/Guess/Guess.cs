@@ -15,6 +15,7 @@ namespace Draw4Fun___client.Guess
     public partial class GuessForm : Form
     {
         private String guess;
+        private int painter;
         string picture;
         private int timerDuration = 30;
 
@@ -56,12 +57,7 @@ namespace Draw4Fun___client.Guess
         {
             guess = guessBox.Text;
             Request req = new Request();
-            req.guessPost(guess);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
+            req.guessPost(guess, painter, User.id);
         }
 
         private void sendToServer()
