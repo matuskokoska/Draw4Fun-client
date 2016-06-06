@@ -1,21 +1,4 @@
-﻿-- phpMyAdmin SQL Dump
--- version 4.5.2
--- http://www.phpmyadmin.net
---
--- Hostiteľ: 127.0.0.1
--- Čas generovania: Št 26.Máj 2016, 09:00
--- Verzia serveru: 5.7.9
--- Verzia PHP: 5.6.16
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
+﻿
 --
 -- Databáza: `draw4fun`
 --
@@ -164,6 +147,5 @@ INSERT INTO `words` (`id`, `word`, `category`) VALUES
 (15, 'nonsense', 5),
 (16, 'anxiety', 5);
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
