@@ -201,7 +201,7 @@ namespace Draw4Fun___client
                     guess.painterId = data.painterid;
                     guess.word = data.word;
                     guess.datePainted = data.datepainted;
-                    
+                    return "daco";
                 }
                 else
                 {
