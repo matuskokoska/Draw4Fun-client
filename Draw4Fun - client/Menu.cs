@@ -28,8 +28,8 @@ namespace Draw4Fun___client
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Guess.GuessForm guess = new Guess.GuessForm();
-            guess.ShowDialog();
+            DrawingChooser chooser = new DrawingChooser();
+            chooser.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)

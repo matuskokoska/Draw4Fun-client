@@ -96,7 +96,7 @@ namespace Draw4Fun___client
             }
         }
 
-        public String getWords()
+        public string getWords()
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/words");
             httpWebRequest.ContentType = "application/json";
@@ -120,7 +120,7 @@ namespace Draw4Fun___client
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = "{\"id\":\"" + id + "\",}";
+                string json = "{\"id\":\"" + id + "\"}";
 
                 streamWriter.Write(json);
                 streamWriter.Flush();
@@ -168,6 +168,32 @@ namespace Draw4Fun___client
             {
                 var result = streamReader.ReadToEnd();
                 return result;
+            }
+        }
+
+        public string getGuess(int userId)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/drawings/get");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = "{\"userid\":\"" + userId + "\"}";
+
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+
+                dynamic data = JsonConvert.DeserializeObject(result);
+                string nickname = data.nickname;
+                return nickname;
             }
         }
 

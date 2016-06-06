@@ -63,6 +63,12 @@
       <DependentUpon>AddFriend.cs</DependentUpon>
     </Compile>
     <Compile Include="API\DataHandler.cs" />
+    <Compile Include="DrawingChooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingChooser.Designer.cs">
+      <DependentUpon>DrawingChooser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Friends.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Draw\Draw.resx">
       <DependentUpon>Draw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingChooser.resx">
+      <DependentUpon>DrawingChooser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Friends.resx">
       <DependentUpon>Friends.cs</DependentUpon>
