@@ -19,29 +19,37 @@ namespace Draw4Fun___client.Guess
         string picture;
         private int timerDuration = 30;
 
-        public GuessForm()
+        public GuessForm(int drawingId,string nickname,string word)
         {
             InitializeComponent();
+            opponentLbl.Text = nickname;
             timer1.Enabled = true;
             timer1.Start();
 
-            //there will be method to get string of image
-            /* picture ="";
-             pb_Canvas.Image =stringToImage(picture);*/
+            Request req = new Request();
+
+            string jsonString = req.showImage(drawingId);
+            dynamic data = JsonConvert.DeserializeObject(jsonString);
+
+            string picture = data[0].streambinary;
+
+              
+            pb_Canvas.Image = stringToImage(picture);
+            
         }
 
-       /* public Image stringToImage(string base64String)
-        {
-            // Convert Base64 String to byte[]
-            byte[] imageBytes = Convert.FromBase64String(base64String);
-            MemoryStream ms = new MemoryStream(imageBytes, 0,
-              imageBytes.Length);
+         public Image stringToImage(string base64String)
+         {
+             // Convert Base64 String to byte[]
+             byte[] imageBytes = Convert.FromBase64String(base64String);
+             MemoryStream ms = new MemoryStream(imageBytes, 0,
+               imageBytes.Length);
 
-            // Convert byte[] to Image
-            ms.Write(imageBytes, 0, imageBytes.Length);
-            Image image = Image.FromStream(ms, true);
-            return image;
-        }*/
+             // Convert byte[] to Image
+             ms.Write(imageBytes, 0, imageBytes.Length);
+             Image image = Image.FromStream(ms, true);
+             return image;
+         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {

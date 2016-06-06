@@ -37,13 +37,13 @@
             // listBox1
             // 
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(59)))), ((int)(((byte)(73)))));
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 31;
+            this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(39, 125);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(275, 159);
+            this.listBox1.Size = new System.Drawing.Size(433, 179);
             this.listBox1.TabIndex = 0;
             // 
             // label1
@@ -60,7 +60,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(236, 344);
+            this.button1.Location = new System.Drawing.Point(394, 342);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 26);
             this.button1.TabIndex = 2;
@@ -76,13 +76,14 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DrawingChooser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Draw4Fun___client.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(346, 396);
+            this.ClientSize = new System.Drawing.Size(528, 417);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
