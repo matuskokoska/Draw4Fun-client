@@ -15,9 +15,8 @@ namespace Draw4Fun___client
         public DrawingChooser()
         {
             InitializeComponent();
-            Request req = new Request();
-            req.getGuess(User.id);
-            //listBox1.Text =          
+            Request req = new Request();       
+            listBox1.Text = req.getGuess(User.id);         
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -191,9 +191,17 @@ namespace Draw4Fun___client
             {
                 var result = streamReader.ReadToEnd();
 
-                dynamic data = JsonConvert.DeserializeObject(result);
-                string nickname = data.nickname;
-                return nickname;
+                //Console.Write("RESULT JE : " + result);
+                if (result != "[]")
+                {
+                    dynamic data = JsonConvert.DeserializeObject(result);
+                    string nickname = data.nickname;
+                    return nickname;
+                }
+                else
+                {
+                    return "nic";
+                }
             }
         }
 
