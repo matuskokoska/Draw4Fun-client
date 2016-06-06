@@ -225,6 +225,7 @@ namespace Draw4Fun___client.Draw
             req.imagePost(wordId,userId,friendId,binaryFile);
             MessageReport msg = new MessageReport("Picture was sent.");
             msg.Show();
+            timer1.Stop();
             this.Close();
         }
 

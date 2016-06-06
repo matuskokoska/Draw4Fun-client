@@ -195,8 +195,13 @@ namespace Draw4Fun___client
                 if (result != "[]")
                 {
                     dynamic data = JsonConvert.DeserializeObject(result);
-                    string nickname = data.nickname;
-                    return nickname;
+                    GuessInfo guess = new GuessInfo();
+                    guess.drawingId = data.id;
+                    guess.nickname = data.nickname;
+                    guess.painterId = data.painterid;
+                    guess.word = data.word;
+                    guess.datePainted = data.datepainted;
+                    
                 }
                 else
                 {

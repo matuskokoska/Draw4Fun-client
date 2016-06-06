@@ -75,6 +75,7 @@
     <Compile Include="Friends.Designer.cs">
       <DependentUpon>Friends.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuessInfo.cs" />
     <Compile Include="GuessWord.cs" />
     <Compile Include="MessageReport.cs">
       <SubType>Form</SubType>
