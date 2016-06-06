@@ -48,4 +48,10 @@ router.post('/score', function(req,res){
     });
 });
 
+router.get('/leaderboard',function(req,res){
+  users.getLeaderboard(function(results){
+    res.json(results);
+  });
+});
+
 module.exports = router;

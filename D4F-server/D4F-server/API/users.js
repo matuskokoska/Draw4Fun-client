@@ -34,5 +34,16 @@ module.exports = {
 
 			}
     });
+  },
+
+  getLeaderboard: function(callback){
+    db.query("SELECT id, nickname, (coalesce(score1, 0) + coalesce(score2, 0))as score FROM users "+
+              "LEFT JOIN (SELECT painter, sum((0.5+drawings.combo*0.5)*wordcategories.points) AS score1 FROM `drawings` INNER JOIN words ON words.id=drawings.wordid INNER JOIN wordcategories ON words.category=wordcategories.id WHERE state=2 GROUP BY painter) painterscore ON painterscore.painter=users.id "+
+              "LEFT JOIN (SELECT reciever, sum((0.5+drawings.combo*0.5)*wordcategories.points) AS score2 FROM `drawings` INNER JOIN words ON words.id=drawings.wordid INNER JOIN wordcategories ON words.category=wordcategories.id WHERE state=2 GROUP BY reciever) receiverscore ON receiverscore.reciever=users.id "+
+              "ORDER BY score DESC limit 10",function(results){
+                if (typeof callback === "function") {
+          				callback(results);
+          			}
+              });
   }
 };
