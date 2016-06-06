@@ -53,7 +53,7 @@ namespace Draw4Fun___client
                     }
                     else
                     {
-                        MessageBox.Show("Error, probably with your Database.", "Error",
+                        MessageBox.Show("Wrong username or password.", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     

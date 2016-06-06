@@ -171,7 +171,7 @@ namespace Draw4Fun___client
             }
         }
 
-        public string getGuess(int userId)
+        public GuessInfo getGuess(int userId)
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/drawings/get");
             httpWebRequest.ContentType = "application/json";
@@ -190,22 +190,23 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-
+                GuessInfo guess = new GuessInfo();
                 //Console.Write("RESULT JE : " + result);
                 if (result != "[]")
                 {
                     dynamic data = JsonConvert.DeserializeObject(result);
-                    GuessInfo guess = new GuessInfo();
+                    
                     guess.drawingId = data.id;
-                    guess.nickname = data.nickname;
-                    guess.painterId = data.painterid;
                     guess.word = data.word;
+                    guess.painterId = data.painterid;
+                    guess.nickname = data.nickname;
                     guess.datePainted = data.datepainted;
-                    return "daco";
+
+                    return guess;
                 }
                 else
                 {
-                    return "nic";
+                    return guess;
                 }
             }
         }
