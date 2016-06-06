@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using Newtonsoft.Json.Linq;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -135,7 +134,7 @@ namespace Draw4Fun___client
             }
         }
 
-        public void guessPost(string guess)
+        public void guessPost(string guess, int painter, int receiver)
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/guess");
             httpWebRequest.ContentType = "application/json";
@@ -143,7 +142,7 @@ namespace Draw4Fun___client
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = "{\"guess\":\"" + guess + "\"}";
+                string json = "{\"painter\":\"" + painter + "\", \"receiver\":\"" + receiver + "\", \"guess\":\"" + guess + "\"}";
 
                 streamWriter.Write(json);
                 streamWriter.Flush();
@@ -154,7 +153,21 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-                Console.WriteLine("GUESS RESULT: "+result);
+            }
+        }
+
+        public String getLeaderboard()
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/users/leaderboard");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "GET";
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                return result;
             }
         }
 
