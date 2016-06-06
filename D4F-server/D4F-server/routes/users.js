@@ -41,4 +41,11 @@ router.post('/removefriend', function (req, res) {
     });
 });
 
+router.post('/score', function(req,res){
+    var userid=req.body.userid;
+    users.getScore(userid,function(score){
+      res.json(score);
+    });
+});
+
 module.exports = router;

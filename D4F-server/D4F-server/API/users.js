@@ -20,12 +20,18 @@ module.exports = {
 	},
 
   getScore: function(userid, callback){
-    db.query("SELECT sum((0.5+drawings.combo*0.5)*wordcategories.points) AS score FROM `drawings`"+
-    "INNER JOIN words ON words.id=drawings.wordid"+
-    "INNER JOIN wordcategories ON words.category=wordcategories.id"+
+    db.query("SELECT sum((0.5+drawings.combo*0.5)*wordcategories.points) AS score FROM `drawings` "+
+    "INNER JOIN words ON words.id=drawings.wordid "+
+    "INNER JOIN wordcategories ON words.category=wordcategories.id "+
     "WHERE state=2 AND (painter="+userid+" OR reciever="+userid+")",function(result){
       if (typeof callback === "function") {
-				callback(result[0].score);
+        if(result[0].score!=null){
+          callback(result[0].score);
+        }
+        else{
+          callback(0);
+        }
+
 			}
     });
   }
