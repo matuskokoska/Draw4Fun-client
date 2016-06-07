@@ -20,7 +20,7 @@ router.post('/search', function (req, res) {
 
 router.post('/getfriends', function (req, res) {
     var userid = req.body.userid;
-    friends.loadfriends(userid, function (results) {
+    friends.loadFriends(userid, function (results) {
         res.json(results);
     });
 });
@@ -28,7 +28,7 @@ router.post('/getfriends', function (req, res) {
 router.post('/addfriend', function (req, res) {
     var userid = req.body.userid;
     var friendid = req.body.friendid;
-    friends.addfriend(userid, function (success) {
+    friends.addFriend(userid, friendid, function (success) {
         res.json(success);
     });
 });
@@ -36,7 +36,7 @@ router.post('/addfriend', function (req, res) {
 router.post('/removefriend', function (req, res) {
     var userid = req.body.userid;
     var friendid = req.body.friendid;
-    friends.deleteFriend(userid, function (success) {
+    friends.deleteFriend(userid, friendid, function (success) {
         res.json(success);
     });
 });

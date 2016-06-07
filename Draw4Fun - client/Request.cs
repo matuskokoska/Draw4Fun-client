@@ -108,11 +108,10 @@ namespace Draw4Fun___client
             {
                 var result = streamReader.ReadToEnd();
                 return result;
-                //Console.Write("Response 3 je: " + result);
             }
         }
 
-        public void friendList(int id)
+        public string getFriendsList(int userId)
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/friendships");
             httpWebRequest.ContentType = "application/json";
@@ -120,8 +119,7 @@ namespace Draw4Fun___client
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = "{\"id\":\"" + id + "\"}";
-
+                string json = "{\"userid\":\"" + userId + "\"}";
                 streamWriter.Write(json);
                 streamWriter.Flush();
                 streamWriter.Close();
@@ -131,6 +129,8 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
+                Console.WriteLine("FRENDSHIPS: " + result);
+                return result;
             }
         }
 
@@ -156,7 +156,7 @@ namespace Draw4Fun___client
             }
         }
 
-        public String getLeaderboard()
+        public string getLeaderboard()
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/users/leaderboard");
             httpWebRequest.ContentType = "application/json";

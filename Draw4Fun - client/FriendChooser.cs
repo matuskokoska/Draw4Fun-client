@@ -24,7 +24,7 @@ namespace Draw4Fun___client
         public void initFriendList()
         {
             Request req = new Request();
-            req.friendList(User.id);
+            req.getFriendsList(User.id);
             //rozparsovat a addnut do listu
         }
 

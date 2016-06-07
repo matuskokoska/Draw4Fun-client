@@ -47,6 +47,7 @@ namespace Draw4Fun___client
                     Request req = new Request();
                     if(req.loginPost(textBox1.Text, encryptedPass))
                     {
+                        User.nickname = textBox1.Text.ToString();
                         this.Hide();
                         Menu menu = new Draw4Fun___client.Menu();
                         menu.ShowDialog();

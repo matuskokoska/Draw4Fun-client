@@ -57,7 +57,7 @@ namespace Draw4Fun___client
                     encryptedPass = hash.EncodePasswordToBase64(textBox3.Text);
 
                     Request req = new Request();
-                    req.registerPost(textBox1.Text, encryptedPass);
+                    req.registerPost(textBox1.Text.ToLower(), encryptedPass);
 
                     MessageReport msg = new MessageReport("Successfully registered.");
                     msg.Show();
