@@ -29,6 +29,14 @@ router.post('/stream', function(req, res){
     })
 });
 
+router.put('/state', function(req,res){
+    var drawingid=req.body.drawingid;
+    var state=req.body.state;
+    drawings.setState(state,drawingid,function(success){
+      res.json(success);
+    });
+});
+
 
 
 module.exports = router;
