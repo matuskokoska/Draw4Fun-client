@@ -15,7 +15,7 @@ namespace Draw4Fun___client.Guess
     public partial class GuessForm : Form
     {
         private String guess;
-        string picture;
+        //string picture;
         private int timerDuration = 30;
         private string word;
         private int painterId;
