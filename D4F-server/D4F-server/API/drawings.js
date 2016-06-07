@@ -1,11 +1,15 @@
 var db = require('./DBconnect.js');
 
 function getCombo(painter, receiver, callback){
-  db.query("SELECT count(*) AS count FROM drawings WHERE "
-          +"(painter LIKE '"+painter+"' AND reciever LIKE '"+receiver+"') OR (painter LIKE '"+receiver+"' AND reciever LIKE '"+painter+"')",
+  console.log("SELECT coalesce(combo, 0) AS cmb FROM drawings WHERE "
+          +"(painter LIKE '"+painter+"' AND reciever LIKE '"+receiver+"') OR (painter LIKE '"+receiver+"' AND reciever LIKE '"+painter+ "') "
+          +"ORDER BY id DESC LIMIT 1");
+  db.query("SELECT coalesce(combo, 0) AS cmb FROM drawings WHERE "
+          +"(painter LIKE '"+painter+"' AND reciever LIKE '"+receiver+"') OR (painter LIKE '"+receiver+"' AND reciever LIKE '"+painter+ "') "
+          +"ORDER BY id DESC LIMIT 1",
           function(result){
 
-            var combo=(result[0].count)+1;
+            var combo=(result[0].cmb)+1;
             if (typeof callback === "function") {
                         callback(combo);
             }
@@ -31,8 +35,8 @@ function getReceiver(painter, receiver, callback){
 
 module.exports = {
     new: function(wordid,painter, receiver, stream, callback){
-        getCombo(painter, receiver,function(combo){
-            getReceiver(painter, receiver, function(finalReciever){
+        getReceiver(painter, receiver, function(finalReciever){
+            getCombo(painter, finalReciever,function(combo){
               db.nonQuery("INSERT INTO drawings(wordid,painter,reciever,state,combo) VALUES ("+wordid+","+painter+","+finalReciever+",0,"+combo+")",
               function(success){
                 if(success){
@@ -52,16 +56,13 @@ module.exports = {
         });
     },
     setState: function(value, id, callback){
-      db.nonQuery("UPDATE drawings SET state="+value+" WHERE id="+id,function(success){
+      db.nonQuery("UPDATE drawings SET state="+value+",combo=0 WHERE id="+id,function(success){
         if (typeof callback === "function") {
               callback(success);
         }
       })
     },
     get: function(receiver, callback){
-      console.log("SELECT drawings.id AS id, word, users.id AS painterid, nickname, wordcategories.name AS cat, datepainted FROM drawings "+
-        "INNER JOIN users ON drawings.painter=users.id INNER JOIN words ON words.id=drawings.wordid INNER JOIN wordcategories ON wordcategories.id=words.category"+
-        "WHERE reciever="+receiver+" AND state=0");
       db.query("SELECT drawings.id AS id, word, users.id AS painterid, nickname, wordcategories.name AS cat, datepainted FROM drawings "+
       " INNER JOIN users ON drawings.painter=users.id INNER JOIN words ON words.id=drawings.wordid INNER JOIN wordcategories ON wordcategories.id=words.category"+
       " WHERE reciever="+receiver+" AND state=0", function(results){
