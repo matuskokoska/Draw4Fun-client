@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,12 +28,38 @@ namespace Draw4Fun___client
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Request req = new Request();
+            string jsonString = req.findFriend(textBox1.Text);
+
+            if (jsonString != "[]")
+            {
+                JArray data = (JArray)JsonConvert.DeserializeObject(jsonString);
+                int count = data.Count;
+
+                dynamic data2 = JsonConvert.DeserializeObject(jsonString);
+
+                for (int i = 0; i < count; i++)
+                {
+                    string nickname = data2[i].nickname;
+                    listBox1.Items.Add(nickname);
+                }
+            }
+            else
+            {
+                listBox1.Items.Add("User not found.");
+                listBox1.Enabled = false;
+                button1.Enabled = false;
+            }
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,14 +20,34 @@ namespace Draw4Fun___client
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             InitializeComponent();
+            initFriendlist();
             listBox1.Enabled = false;
         }
 
-        public void initFriendList()
+        private void initFriendlist()
         {
             Request req = new Request();
-            req.getFriendsList(User.id);
-            //rozparsovat a addnut do listu
+            string jsonString = req.getFriendsList(User.id);
+
+            if (jsonString != "[]")
+            {
+                JArray data = (JArray)JsonConvert.DeserializeObject(jsonString);
+                int count = data.Count;
+
+                dynamic data2 = JsonConvert.DeserializeObject(jsonString);
+
+                for (int i = 0; i < count; i++)
+                {
+                    string nickname = data2[i].nickname;
+                    listBox1.Items.Add(i + 1 + ". " + nickname);
+                }
+            }
+            else
+            {
+                listBox1.Items.Add("You have no friends. Looser!");
+                listBox1.Enabled = false;
+                button1.Enabled = false;
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
