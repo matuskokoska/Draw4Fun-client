@@ -23,12 +23,15 @@ namespace Draw4Fun___client
 
             string jsonString = req.getGuess(User.id);
 
+            Console.Write("STRING JSON JE:" + jsonString + "a user id je: "+User.id );
+
             if (jsonString != "[]")
             {
                 JArray data = (JArray)JsonConvert.DeserializeObject(jsonString);
                 int count = data.Count;
 
-               // Console.Write("Dlzka DATA JE: " + count);
+                Console.Write("Dlzka DATA JE: " + count);
+
                 dynamic data2 = JsonConvert.DeserializeObject(jsonString);
                 
                 for(int i=0; i< count; i++)
@@ -62,13 +65,11 @@ namespace Draw4Fun___client
                 string word = data[selectedIndex].word;
                 int drawingId = data[selectedIndex].id;
                 int painterId = data[selectedIndex].painterid;
+                string category = data[selectedIndex].category;
 
-                Guess.GuessForm guess = new Guess.GuessForm(drawingId,nickname,word,painterId);
+                Guess.GuessForm guess = new Guess.GuessForm(drawingId,nickname,word,painterId,category);
                 guess.ShowDialog();
-
-                //Console.Write("SELECTED INDEX JE: "+listBox1.SelectedIndex);
-
-
+                this.Close();
             }
         }
 

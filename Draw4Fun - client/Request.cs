@@ -189,25 +189,7 @@ namespace Draw4Fun___client
             var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
-                var result = streamReader.ReadToEnd();
-                //GuessInfo guess = new GuessInfo();
-                //Console.Write("RESULT JE : " + result);
-                /*if (result != "[]")
-                {
-                    dynamic data = JsonConvert.DeserializeObject(result);
-                    
-                    guess.drawingId = data.id;
-                    guess.word = data.word;
-                    guess.painterId = data.painterid;
-                    guess.nickname = data.nickname;
-                    guess.datePainted = data.datepainted;
-
-                    return guess;
-                }
-                else
-                {
-                    return guess;
-                }*/
+                var result = streamReader.ReadToEnd();               
                 return result;
             }
         }
@@ -232,6 +214,30 @@ namespace Draw4Fun___client
             {
                 var result = streamReader.ReadToEnd();
                 return result;
+            }
+        }
+
+        public bool setState(int drawingId,int state)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/drawings/state");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "PUT";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = "{\"drawingid\":\"" + drawingId + "\"," +
+                                 "\"state\":\"" + state + "\"}";
+
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                return Boolean.Parse(result);
             }
         }
 
