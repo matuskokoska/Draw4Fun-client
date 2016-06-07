@@ -61,8 +61,9 @@ namespace Draw4Fun___client
                 string nickname = data[selectedIndex].nickname;
                 string word = data[selectedIndex].word;
                 int drawingId = data[selectedIndex].id;
+                int painterId = data[selectedIndex].painterid;
 
-                Guess.GuessForm guess = new Guess.GuessForm(drawingId,nickname,word);
+                Guess.GuessForm guess = new Guess.GuessForm(drawingId,nickname,word,painterId);
                 guess.ShowDialog();
 
                 //Console.Write("SELECTED INDEX JE: "+listBox1.SelectedIndex);

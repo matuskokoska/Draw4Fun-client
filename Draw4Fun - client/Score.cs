@@ -37,7 +37,7 @@ namespace Draw4Fun___client
 
                 poradie = i + 1;
 
-                String user = poradie + " " + nickname + " " + score;
+                String user = poradie + "   " + nickname + "    " + score;
                 listBox1.Items.Add(user);
             }
         }
