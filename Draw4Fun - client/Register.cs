@@ -87,7 +87,7 @@ namespace Draw4Fun___client
 
         }
 
-        private Boolean isUsernameValid(string username)
+        public Boolean isUsernameValid(string username)
         {
             Regex regex = new Regex(@"^[a-zA-Z0-9_]{3,16}$");
             Match match = regex.Match(username);
@@ -101,7 +101,7 @@ namespace Draw4Fun___client
 
         }
 
-        private Boolean isPasswordValid(string password)
+        public Boolean isPasswordValid(string password)
         {
             Regex regex = new Regex(@"^[a-zA-Z0-9]{8,16}$");
             Match match = regex.Match(password);
@@ -115,7 +115,7 @@ namespace Draw4Fun___client
 
         }
 
-        private bool isPasswordEqual(string password, string confirmPassword)
+        public bool isPasswordEqual(string password, string confirmPassword)
         {
             if (!password.Equals(confirmPassword))
             {

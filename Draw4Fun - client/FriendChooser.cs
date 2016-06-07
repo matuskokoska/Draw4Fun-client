@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,20 +14,43 @@ namespace Draw4Fun___client
 {
     public partial class FriendChooser : Form
     {
-        
+        private string jsonString;
+
         public FriendChooser()
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             InitializeComponent();
+            initFriendlist();
             listBox1.Enabled = false;
         }
 
-        public void initFriendList()
+        private void initFriendlist()
         {
             Request req = new Request();
-            req.getFriendsList(User.id);
-            //rozparsovat a addnut do listu
+            jsonString = req.getFriendsList(User.id);
+            //this.jsonString = jsonString;
+
+            if (jsonString != "[]")
+            {
+                JArray data = (JArray)JsonConvert.DeserializeObject(jsonString);
+                int count = data.Count;
+
+                dynamic data2 = JsonConvert.DeserializeObject(jsonString);
+
+                for (int i = 0; i < count; i++)
+                {
+                    int friendId = data2[i].id;
+                    string nickname = data2[i].nickname;
+                    listBox1.Items.Add(i + 1 + ". " + nickname);
+                }
+            }
+            else
+            {
+                listBox1.Items.Add("You have no friends. Looser!");
+                listBox1.Enabled = false;
+                button1.Enabled = false;
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -51,8 +76,13 @@ namespace Draw4Fun___client
                 //inac sa to nastavi podla id daneho frienda
                 else
                 {
-                    //wordChooser = new WordChooser();  nejake cislo frienda
-                    //wordChooser.ShowDialog();
+                    int selected = listBox1.SelectedIndex;
+
+                    dynamic data2 = JsonConvert.DeserializeObject(jsonString);
+                    int friendId = data2[selected].id;
+                    
+                    wordChooser = new WordChooser(friendId);
+                    wordChooser.ShowDialog();
                 }
                 this.Dispose();
                 

@@ -113,7 +113,7 @@ namespace Draw4Fun___client
 
         public string getFriendsList(int userId)
         {
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/friendships");
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/users/getfriends");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
 
@@ -129,8 +129,51 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-                Console.WriteLine("FRENDSHIPS: " + result);
                 return result;
+            }
+        }
+
+        public string findFriend(string name)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/users/search");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = "{\"name\":\"" + name + "\"}";
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                return result;
+            }
+        }
+
+        public void addFriend(int userId, int friendId)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/users/addfriend");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = "{\"userid\":\"" + userId + "\", \"friendid\":\"" + friendId + "\"}";
+
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
             }
         }
 

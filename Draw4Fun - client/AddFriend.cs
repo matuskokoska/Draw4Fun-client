@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,8 @@ namespace Draw4Fun___client
 {
     public partial class AddFriend : Form
     {
+        private int friendId;
+
         public AddFriend()
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -19,19 +23,50 @@ namespace Draw4Fun___client
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //add friend
+            Request req = new Request();
+            req.addFriend(User.id, friendId);
+            MessageReport msg = new MessageReport("Friend added.");
+            msg.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Request req = new Request();
+            string jsonString = req.findFriend(textBox1.Text);
+
+            if (jsonString != "[]")
+            {
+                JArray data = (JArray)JsonConvert.DeserializeObject(jsonString);
+                int count = data.Count;
+
+                dynamic data2 = JsonConvert.DeserializeObject(jsonString);
+
+                for (int i = 0; i < count; i++)
+                {
+                    friendId = data2[i].id;
+                    string nickname = data2[i].nickname;
+                    listBox1.Items.Add(nickname);
+                }
+            }
+            else
+            {
+                listBox1.Items.Add("User not found.");
+                listBox1.Enabled = false;
+                button1.Enabled = false;
+            }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
         }
     }
 }

@@ -45,7 +45,6 @@ namespace Draw4Fun___client
             {
                 listBox1.Items.Add("You have no friends. Looser!");
                 listBox1.Enabled = false;
-                button1.Enabled = false;
             }
         }
 

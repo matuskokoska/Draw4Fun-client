@@ -1,127 +1,23 @@
-c:\users\matúš\documents\visual studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.config
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.config
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.pdb
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csprojResolveAssemblyReference.cache
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.DrawingChooser.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Login.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.MessageReport.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.FriendChooser.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Guess.GuessForm.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Properties.Resources.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
+D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
 D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form1.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Guess.GuessForm.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.config
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.pdb
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csprojResolveAssemblyReference.cache
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form1.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Guess.GuessForm.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Properties.Resources.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Form1.resources
-<<<<<<< HEAD
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
-=======
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
->>>>>>> e5c56c6acc3f9d86f7d37102b50be0312cf88d7e
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\bin\Debug\Draw4Fun - client.pdb
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csprojResolveAssemblyReference.cache
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form1.resources
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Guess.GuessForm.resources
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Properties.Resources.resources
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.config
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.pdb
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csprojResolveAssemblyReference.cache
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form1.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Guess.GuessForm.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Properties.Resources.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.dll
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.pdb
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.dll
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.pdb
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\bin\Debug\ServerData.dll
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\bin\Debug\ServerData.pdb
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
-C:\Users\Matúš\Documents\Visual Studio 2015\Projects\Draw4Fun - client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.dll
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.pdb
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.config
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.pdb
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.dll
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\ServerData.pdb
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csprojResolveAssemblyReference.cache
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form1.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Form2.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Guess.GuessForm.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Properties.Resources.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AboutUs.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.FriendChooser.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.FriendChooser.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.FriendChooser.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Login.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Login.resources
-D:\SYSTEM\PROGRAMY\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Login.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
-D:\nodejs\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.config
-D:\nodejs\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
-D:\nodejs\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Login.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.FriendChooser.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
-C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
->>>>>>> 6e81ca459fb11a3ea1fff3be64f09c50c635a3d5
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.MessageReport.resources
-C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.DrawingChooser.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.DrawingChooser.resources
-D:\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.MessageReport.resources
