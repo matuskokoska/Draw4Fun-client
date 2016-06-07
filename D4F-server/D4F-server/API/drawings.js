@@ -12,23 +12,42 @@ function getCombo(painter, receiver, callback){
           });
 }
 
+function getReceiver(painter, receiver, callback){
+  if(receiver==0){
+    db.query("SELECT id FROM users "+
+             "WHERE id NOT IN(SELECT id FROM friendships INNER JOIN users ON friendships.user2=users.id WHERE user1=5) "+
+             "ORDER BY Rand() LIMIT 1", function(results){
+               if (typeof callback === "function") {
+                           callback(results[0].id);
+               }
+             });
+  }
+  else{
+      if (typeof callback === "function") {
+              callback(receiver);
+      }
+  }
+}
+
 module.exports = {
     new: function(wordid,painter, receiver, stream, callback){
         getCombo(painter, receiver,function(combo){
-            db.nonQuery("INSERT INTO drawings(wordid,painter,reciever,state,combo) VALUES ("+wordid+","+painter+","+receiver+",0,"+combo+")",
-            function(success){
-              if(success){
-                db.nonQuery("INSERT INTO streams(streambinary) VALUES ('"+stream+"')",function(success2){
-                  if (typeof callback === "function") {
-    													callback(success2);
-    							}
-                });
-              }
-              else{
-                if (typeof callback === "function") {
-                            callback(false);
+            getReceiver(painter, receiver, function(finalReciever){
+              db.nonQuery("INSERT INTO drawings(wordid,painter,reciever,state,combo) VALUES ("+wordid+","+painter+","+finalReciever+",0,"+combo+")",
+              function(success){
+                if(success){
+                  db.nonQuery("INSERT INTO streams(streambinary) VALUES ('"+stream+"')",function(success2){
+                    if (typeof callback === "function") {
+      													callback(success2);
+      							}
+                  });
                 }
-              }
+                else{
+                  if (typeof callback === "function") {
+                              callback(false);
+                  }
+                }
+              });
             });
         });
     },
