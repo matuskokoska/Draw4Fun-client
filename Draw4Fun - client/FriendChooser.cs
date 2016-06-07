@@ -14,7 +14,8 @@ namespace Draw4Fun___client
 {
     public partial class FriendChooser : Form
     {
-        
+        private string jsonString;
+
         public FriendChooser()
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -27,7 +28,8 @@ namespace Draw4Fun___client
         private void initFriendlist()
         {
             Request req = new Request();
-            string jsonString = req.getFriendsList(User.id);
+            jsonString = req.getFriendsList(User.id);
+            //this.jsonString = jsonString;
 
             if (jsonString != "[]")
             {
@@ -38,6 +40,7 @@ namespace Draw4Fun___client
 
                 for (int i = 0; i < count; i++)
                 {
+                    int friendId = data2[i].id;
                     string nickname = data2[i].nickname;
                     listBox1.Items.Add(i + 1 + ". " + nickname);
                 }
@@ -73,8 +76,13 @@ namespace Draw4Fun___client
                 //inac sa to nastavi podla id daneho frienda
                 else
                 {
-                    //wordChooser = new WordChooser();  nejake cislo frienda
-                    //wordChooser.ShowDialog();
+                    int selected = listBox1.SelectedIndex;
+
+                    dynamic data2 = JsonConvert.DeserializeObject(jsonString);
+                    int friendId = data2[selected].id;
+                    
+                    wordChooser = new WordChooser(friendId);
+                    wordChooser.ShowDialog();
                 }
                 this.Dispose();
                 

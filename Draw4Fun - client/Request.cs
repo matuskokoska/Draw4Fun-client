@@ -155,6 +155,28 @@ namespace Draw4Fun___client
             }
         }
 
+        public void addFriend(int userId, int friendId)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/users/addfriend");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = "{\"userid\":\"" + userId + "\", \"friendid\":\"" + friendId + "\"}";
+
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+            }
+        }
+
         public void guessPost(string guess, int painter, int receiver)
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/guess");

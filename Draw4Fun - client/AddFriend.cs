@@ -14,6 +14,8 @@ namespace Draw4Fun___client
 {
     public partial class AddFriend : Form
     {
+        private int friendId;
+
         public AddFriend()
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -21,14 +23,13 @@ namespace Draw4Fun___client
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            //add friend
+            Request req = new Request();
+            req.addFriend(User.id, friendId);
+            MessageReport msg = new MessageReport("Friend added.");
+            msg.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -50,6 +51,7 @@ namespace Draw4Fun___client
 
                 for (int i = 0; i < count; i++)
                 {
+                    friendId = data2[i].id;
                     string nickname = data2[i].nickname;
                     listBox1.Items.Add(nickname);
                 }
@@ -60,6 +62,11 @@ namespace Draw4Fun___client
                 listBox1.Enabled = false;
                 button1.Enabled = false;
             }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
         }
     }
 }
