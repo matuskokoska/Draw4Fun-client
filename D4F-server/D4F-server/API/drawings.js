@@ -8,10 +8,14 @@ function getCombo(painter, receiver, callback){
           +"(painter LIKE '"+painter+"' AND reciever LIKE '"+receiver+"') OR (painter LIKE '"+receiver+"' AND reciever LIKE '"+painter+ "') "
           +"ORDER BY id DESC LIMIT 1",
           function(result){
-
-            var combo=(result[0].cmb)+1;
+            if(result[0]=='undefined'){
+              var combo=1;
+            }
+            else{
+              var combo=(result[0].cmb)+1;
+            }
             if (typeof callback === "function") {
-                        callback(combo);
+                  callback(combo);
             }
           });
 }
