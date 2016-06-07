@@ -13,7 +13,6 @@ namespace Draw4Fun___client
 {
     public partial class Score : Form
     {
-        private List<String> leaderboardList = new List<String>();
         private int poradie;
 
         public Score()
@@ -26,7 +25,6 @@ namespace Draw4Fun___client
 
         private void initLeaderboard()
         {
-            listBox1.Items.Clear();
             Request req = new Request();
             String jsonString = req.getLeaderboard();
 
@@ -34,17 +32,14 @@ namespace Draw4Fun___client
 
             for(int i = 0; i < 10; i++){
                 int id = data[i].id;
-                String username = data[i].username;
+                String nickname = data[i].nickname;
                 int score = data[i].score;
 
                 poradie = i + 1;
 
-                String user = poradie + " " + username + " " + score;
-                leaderboardList.Add(user);
+                String user = poradie + " " + nickname + " " + score;
+                listBox1.Items.Add(user);
             }
-
-            listBox1.Items.Add(leaderboardList);
-
         }
 
         private void button1_Click(object sender, EventArgs e)
