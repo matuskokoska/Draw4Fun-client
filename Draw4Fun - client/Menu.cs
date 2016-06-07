@@ -18,6 +18,7 @@ namespace Draw4Fun___client
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             InitializeComponent();
+            Console.WriteLine("User ID: " + User.id + " User nickname: " + User.nickname);
         }
 
         private void button1_Click(object sender, EventArgs e)

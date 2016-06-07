@@ -12,7 +12,7 @@ namespace Draw4Fun___client.API
 {
     class DataHandler
     {
-        public Socket master;
+        //public Socket master;
 
 
         public static void Run()

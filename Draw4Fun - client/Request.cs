@@ -108,11 +108,10 @@ namespace Draw4Fun___client
             {
                 var result = streamReader.ReadToEnd();
                 return result;
-                //Console.Write("Response 3 je: " + result);
             }
         }
 
-        public void friendList(int id)
+        public string getFriendsList(int userId)
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/friendships");
             httpWebRequest.ContentType = "application/json";
@@ -120,8 +119,7 @@ namespace Draw4Fun___client
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = "{\"id\":\"" + id + "\"}";
-
+                string json = "{\"userid\":\"" + userId + "\"}";
                 streamWriter.Write(json);
                 streamWriter.Flush();
                 streamWriter.Close();
@@ -131,6 +129,8 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
+                Console.WriteLine("FRENDSHIPS: " + result);
+                return result;
             }
         }
 
@@ -156,7 +156,7 @@ namespace Draw4Fun___client
             }
         }
 
-        public String getLeaderboard()
+        public string getLeaderboard()
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/users/leaderboard");
             httpWebRequest.ContentType = "application/json";
@@ -189,25 +189,7 @@ namespace Draw4Fun___client
             var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
-                var result = streamReader.ReadToEnd();
-                //GuessInfo guess = new GuessInfo();
-                //Console.Write("RESULT JE : " + result);
-                /*if (result != "[]")
-                {
-                    dynamic data = JsonConvert.DeserializeObject(result);
-                    
-                    guess.drawingId = data.id;
-                    guess.word = data.word;
-                    guess.painterId = data.painterid;
-                    guess.nickname = data.nickname;
-                    guess.datePainted = data.datepainted;
-
-                    return guess;
-                }
-                else
-                {
-                    return guess;
-                }*/
+                var result = streamReader.ReadToEnd();               
                 return result;
             }
         }
@@ -232,6 +214,30 @@ namespace Draw4Fun___client
             {
                 var result = streamReader.ReadToEnd();
                 return result;
+            }
+        }
+
+        public bool setState(int drawingId,int state)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/drawings/state");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "PUT";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = "{\"drawingid\":\"" + drawingId + "\"," +
+                                 "\"state\":\"" + state + "\"}";
+
+                streamWriter.Write(json);
+                streamWriter.Flush();
+                streamWriter.Close();
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                return Boolean.Parse(result);
             }
         }
 

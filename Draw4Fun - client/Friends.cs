@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +19,34 @@ namespace Draw4Fun___client
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             InitializeComponent();
+            label1.Text = User.nickname;
+            initFriendlist();
+        }
+
+        private void initFriendlist()
+        {
+            Request req = new Request();
+            string jsonString = req.getFriendsList(User.id);
+
+            if (jsonString != "[]")
+            {
+                JArray data = (JArray)JsonConvert.DeserializeObject(jsonString);
+                int count = data.Count;
+
+                dynamic data2 = JsonConvert.DeserializeObject(jsonString);
+
+                for (int i = 0; i < count; i++)
+                {
+                    string nickname = data2[i].nickname;
+                    listBox1.Items.Add(i + 1 + ". " + nickname);
+                }
+            }
+            else
+            {
+                listBox1.Items.Add("You have no friends. Looser!");
+                listBox1.Enabled = false;
+                button1.Enabled = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,7 +62,7 @@ namespace Draw4Fun___client
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

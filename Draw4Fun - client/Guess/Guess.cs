@@ -15,20 +15,25 @@ namespace Draw4Fun___client.Guess
     public partial class GuessForm : Form
     {
         private String guess;
-        string picture;
+        //string picture;
         private int timerDuration = 30;
         private string word;
         private int painterId;
+        private string category;
+        private int drawingId;
 
-        public GuessForm(int drawingId, string nickname, string word, int painterId)
+        public GuessForm(int drawingId, string nickname, string word, int painterId, string category)
         {
             InitializeComponent();
             opponentLbl.Text = nickname;
+            categoryLbl.Text = category;
             timer1.Enabled = true;
             timer1.Start();
 
             this.word = word;
             this.painterId = painterId;
+            this.category = category;
+            this.drawingId = drawingId;
 
             Request req = new Request();
 
@@ -67,9 +72,10 @@ namespace Draw4Fun___client.Guess
             guess = guessBox.Text.ToLower();
             if (guess.Equals(word))
             {
+                timer1.Stop();
                 Request req = new Request();
-                req.guessPost(guess, painterId, User.id);
-
+                req.setState(drawingId,2);
+                // send to server function
                 return true;
             }
             else
@@ -81,18 +87,17 @@ namespace Draw4Fun___client.Guess
 
         private void sendToServer()
         {
-            timer1.Stop();
+            
             if (guessBox.Text == "")
             {
                 MessageReport msg = new MessageReport("Empty field");
-                msg.Show();
-                this.Close();
+                msg.Show();               
             }
             else
             {
                 if (SubmitGuess())
                 {
-                    MessageReport msg = new MessageReport("");
+                    MessageReport msg = new MessageReport("Nice. Your guess was successful.");
                     msg.Show();
                     this.Close();
                 }
@@ -104,14 +109,20 @@ namespace Draw4Fun___client.Guess
 
             }
         }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = timerDuration.ToString();
             timerDuration--;
             if (timerDuration == -1)
             {
+                timer1.Stop();
+                Request req = new Request();
+                req.setState(drawingId, 1);
+
                 MessageReport msg = new MessageReport("Whooops......");
                 msg.Show();
+                this.Close();         
             }
         }
     }

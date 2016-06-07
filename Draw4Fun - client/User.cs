@@ -10,6 +10,7 @@ namespace Draw4Fun___client
     {
         private static User user = new User();
         public static int id;
+        public static String nickname;
 
         private User(){}
 
