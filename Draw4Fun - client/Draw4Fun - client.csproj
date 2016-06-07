@@ -202,7 +202,6 @@
   <ItemGroup>
     <Content Include="Draw\eraser.png" />
     <None Include="Resources\button_bg.png" />
-    <None Include="Resources\data-latin.ttf" />
     <None Include="Resources\pencil.png" />
     <None Include="Resources\blankPaper.png" />
     <None Include="Resources\button_s.png" />
