@@ -19,6 +19,12 @@ namespace Draw4Fun___client
             this.MaximizeBox = false;
             InitializeComponent();
             Console.WriteLine("User ID: " + User.id + " User nickname: " + User.nickname);
+
+            Request req = new Request();
+            label2.Text = req.getScore(User.id);
+
+            timer1.Start();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +60,12 @@ namespace Draw4Fun___client
         {
             Friends fr = new Friends();
             fr.ShowDialog();
+        }
+
+        Request globalReq = new Request();
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label2.Text = globalReq.getScore(User.id);
         }
     }
 }

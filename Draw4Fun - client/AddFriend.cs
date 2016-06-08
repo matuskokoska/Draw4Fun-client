@@ -15,6 +15,7 @@ namespace Draw4Fun___client
     public partial class AddFriend : Form
     {
         private int friendId;
+        private string jsonString;
 
         public AddFriend()
         {
@@ -27,9 +28,20 @@ namespace Draw4Fun___client
         {
             //add friend
             Request req = new Request();
-            req.addFriend(User.id, friendId);
-            MessageReport msg = new MessageReport("Friend added.");
-            msg.Show();
+            dynamic data2 = JsonConvert.DeserializeObject(jsonString);
+
+            if (listBox1.SelectedIndex < 0)
+            {               
+                MessageReport msg2 = new MessageReport("You must choose a friend.");
+                msg2.Show();
+            }
+            else
+            {
+                friendId = data2[listBox1.SelectedIndex].id;
+                req.addFriend(User.id, friendId);
+                MessageReport msg = new MessageReport("Friend added.");
+                msg.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -39,11 +51,16 @@ namespace Draw4Fun___client
 
         private void button3_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+
             Request req = new Request();
-            string jsonString = req.findFriend(textBox1.Text);
+            jsonString = req.findFriend(textBox1.Text);
 
             if (jsonString != "[]")
             {
+                listBox1.Enabled = true;
+                button1.Enabled = true;
+
                 JArray data = (JArray)JsonConvert.DeserializeObject(jsonString);
                 int count = data.Count;
 
@@ -51,17 +68,19 @@ namespace Draw4Fun___client
 
                 for (int i = 0; i < count; i++)
                 {
-                    friendId = data2[i].id;
                     string nickname = data2[i].nickname;
                     listBox1.Items.Add(nickname);
                 }
+                
             }
             else
             {
-                listBox1.Items.Add("User not found.");
+                listBox1.Items.Clear();
+                listBox1.Items.Add("User was not found.");
                 listBox1.Enabled = false;
                 button1.Enabled = false;
             }
+            textBox1.Text = "";
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

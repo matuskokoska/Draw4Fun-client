@@ -43,7 +43,7 @@ namespace Draw4Fun___client
             }
             else
             {
-                listBox1.Items.Add("You have no friends. Looser!");
+                listBox1.Items.Add("You have no friends.");
                 listBox1.Enabled = false;
             }
         }
@@ -52,6 +52,8 @@ namespace Draw4Fun___client
         {
             AddFriend adfr = new AddFriend();
             adfr.ShowDialog();
+            listBox1.Items.Clear();
+            initFriendlist();
         }
 
         private void button2_Click(object sender, EventArgs e)
