@@ -30,10 +30,18 @@ namespace Draw4Fun___client
             Request req = new Request();
             dynamic data2 = JsonConvert.DeserializeObject(jsonString);
 
-            friendId = data2[listBox1.SelectedIndex].id;
-            req.addFriend(User.id, friendId);
-            MessageReport msg = new MessageReport("Friend added.");
-            msg.Show();
+            if (listBox1.SelectedIndex < 0)
+            {               
+                MessageReport msg2 = new MessageReport("You must choose a friend.");
+                msg2.Show();
+            }
+            else
+            {
+                friendId = data2[listBox1.SelectedIndex].id;
+                req.addFriend(User.id, friendId);
+                MessageReport msg = new MessageReport("Friend added.");
+                msg.Show();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -68,7 +76,7 @@ namespace Draw4Fun___client
             else
             {
                 listBox1.Items.Clear();
-                listBox1.Items.Add("User not found.");
+                listBox1.Items.Add("User was not found.");
                 listBox1.Enabled = false;
                 button1.Enabled = false;
             }
