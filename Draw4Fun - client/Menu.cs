@@ -19,6 +19,10 @@ namespace Draw4Fun___client
             this.MaximizeBox = false;
             InitializeComponent();
             Console.WriteLine("User ID: " + User.id + " User nickname: " + User.nickname);
+
+            Request req = new Request();
+            label2.Text = req.getScore(User.id);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
