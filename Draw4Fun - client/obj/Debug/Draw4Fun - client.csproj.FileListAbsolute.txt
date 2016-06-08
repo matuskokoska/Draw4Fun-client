@@ -44,3 +44,26 @@ C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
 C:\Users\PC-1\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe.config
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.exe
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.pdb
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.exe
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Draw4Fun - client.pdb
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csprojResolveAssemblyReference.cache
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.About.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.AddFriend.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Draw.Draw.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.DrawingChooser.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Friends.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Login.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.MessageReport.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Register.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.FriendChooser.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Guess.GuessForm.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Menu.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Properties.Resources.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.Score.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun___client.WordChooser.resources
+C:\Users\Brano\Documents\GitHub\Draw4Fun-client\Draw4Fun - client\obj\Debug\Draw4Fun - client.csproj.GenerateResource.Cache
