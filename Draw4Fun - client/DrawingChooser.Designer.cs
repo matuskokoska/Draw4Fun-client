@@ -43,7 +43,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
             this.listBox1.Location = new System.Drawing.Point(29, 102);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(326, 144);
             this.listBox1.TabIndex = 0;
@@ -64,9 +64,9 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(296, 278);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 21);
+            this.button1.Size = new System.Drawing.Size(70, 25);
             this.button1.TabIndex = 2;
             this.button1.Text = "Guess";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,9 +75,9 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(29, 280);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 19);
+            this.button2.Size = new System.Drawing.Size(70, 25);
             this.button2.TabIndex = 3;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
@@ -94,7 +94,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DrawingChooser";
             this.Text = "Draw Form";
             this.ResumeLayout(false);
