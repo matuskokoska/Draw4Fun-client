@@ -47,7 +47,7 @@ namespace Draw4Fun___client
             }
             else
             {
-                listBox1.Items.Add("You have no friends. Looser!");
+                listBox1.Items.Add("You have no friends.");
                 listBox1.Enabled = false;
                 button1.Enabled = false;
             }
@@ -89,7 +89,8 @@ namespace Draw4Fun___client
             }
             else
             {
-                MessageBox.Show("You must choose a friend.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageReport msg = new MessageReport("You must choose a friend.");
+                msg.Show();
             }
         }
 
