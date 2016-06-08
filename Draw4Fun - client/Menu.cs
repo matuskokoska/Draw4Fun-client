@@ -22,6 +22,8 @@ namespace Draw4Fun___client
 
             Request req = new Request();
             label2.Text = req.getScore(User.id);
+
+            timer1.Start();
             
         }
 
@@ -58,6 +60,13 @@ namespace Draw4Fun___client
         {
             Friends fr = new Friends();
             fr.ShowDialog();
+        }
+
+        Request globalReq = new Request();
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label2.Text = globalReq.getScore(User.id);
+            Console.Write("Teraz.\n");
         }
     }
 }
