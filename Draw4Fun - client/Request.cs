@@ -10,14 +10,27 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Collections.Specialized;
+using System.Configuration;
 
 namespace Draw4Fun___client
 {
     class Request
     {
-        public string url = "http://localhost:9797";
+        public string url;
+        // public string url = "http://localhost:9797";
+        public Request() { 
+            url = string.Empty;
+            var connectionManagerDatabaseServers = ConfigurationManager.GetSection("ConnectionManagerDatabaseServers") as NameValueCollection;
+            if(connectionManagerDatabaseServers != null)
+            {
+                url = connectionManagerDatabaseServers["url"].ToString();
+            }
+            Console.Write("URL JE : "+url);
+        }
+    
 
-        public void registerPost(string nickname,string password)
+    public void registerPost(string nickname,string password)
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url + "/register");
             httpWebRequest.ContentType = "application/json";
