@@ -154,7 +154,8 @@ namespace Draw4Fun___client
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = "{\"name\":\"" + name + "\"}";
+                string json = "{\"name\":\"" + name + "\"," +
+                              "\"userid\":\"" + User.id + "\"}";
                 streamWriter.Write(json);
                 streamWriter.Flush();
                 streamWriter.Close();
@@ -164,6 +165,7 @@ namespace Draw4Fun___client
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
+                Console.Write("RESULTS OF FINDFRIEND:" + result);
                 return result;
             }
         }
