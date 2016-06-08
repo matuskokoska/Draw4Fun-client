@@ -13,7 +13,7 @@ namespace Draw4Fun___client
 {
     public partial class Score : Form
     {
-        private int poradie;
+        private int rank;
 
         public Score()
         {
@@ -35,9 +35,9 @@ namespace Draw4Fun___client
                 String nickname = data[i].nickname;
                 int score = data[i].score;
 
-                poradie = i + 1;
+                rank = i + 1;
 
-                String user = poradie + "          " + nickname + "           " + score;
+                String user = rank + "                 " + nickname + "                  " +score;
                 listBox1.Items.Add(user);
             }
         }

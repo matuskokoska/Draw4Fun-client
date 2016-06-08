@@ -16,6 +16,8 @@ namespace Draw4Fun___client
     {
         public DrawingChooser()
         {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             InitializeComponent();
             Request req = new Request();
             /*GuessInfo guess = new GuessInfo();

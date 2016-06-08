@@ -22,6 +22,8 @@ namespace Draw4Fun___client
 
         public WordChooser(int friendId)
         {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             InitializeComponent();
             initWords();
             this.friendId = friendId;
