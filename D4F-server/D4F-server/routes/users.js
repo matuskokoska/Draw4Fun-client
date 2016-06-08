@@ -13,7 +13,8 @@ router.post('/load', function (req, res) {
 
 router.post('/search', function (req, res) {
     var name = req.body.name;
-    users.search(name, function (results) {
+    var userid = req.body.userid;
+    users.search(name, userid, function (results) {
         res.json(results);
     });
 });

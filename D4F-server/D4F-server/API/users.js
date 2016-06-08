@@ -10,8 +10,8 @@ module.exports = {
         });
     },
 
-	search: function (name, callback) {
-		db.query("SELECT id,nickname FROM users WHERE nickname LIKE '%" + name + "%'",
+	search: function (name, userid, callback) {
+		db.query("SELECT id,nickname FROM users WHERE nickname LIKE '%" + name + "%' AND id NOT LIKE "+userid,
         function (results) {
 			if (typeof callback === "function") {
 				callback(results);
