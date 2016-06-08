@@ -50,6 +50,9 @@ namespace Draw4Fun___client
 
             if (jsonString != "[]")
             {
+                listBox1.Enabled = true;
+                button1.Enabled = true;
+
                 JArray data = (JArray)JsonConvert.DeserializeObject(jsonString);
                 int count = data.Count;
 

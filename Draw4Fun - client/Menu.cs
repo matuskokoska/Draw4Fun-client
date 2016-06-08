@@ -66,7 +66,6 @@ namespace Draw4Fun___client
         private void timer1_Tick(object sender, EventArgs e)
         {
             label2.Text = globalReq.getScore(User.id);
-            Console.Write("Teraz.\n");
         }
     }
 }
