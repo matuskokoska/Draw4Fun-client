@@ -83,7 +83,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(172, 65);
             this.button4.TabIndex = 3;
-            this.button4.Text = "EXIT";
+            this.button4.Text = "LOG OUT";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -146,7 +146,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 5000;
+            this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Menu

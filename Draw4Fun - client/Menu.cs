@@ -47,7 +47,10 @@ namespace Draw4Fun___client
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            this.Close();
+            Login login = new Login();
+            login.Show();
+            //Application.Exit(); 
         }
 
         private void button5_Click(object sender, EventArgs e)
