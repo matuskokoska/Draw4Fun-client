@@ -26,13 +26,15 @@ namespace Draw4Fun___client.Guess
         {
             InitializeComponent();
             opponentLbl.Text = nickname;
-            categoryLbl.Text = category;
+            
             timer1.Enabled = true;
             timer1.Start();
 
             this.word = word;
             this.painterId = painterId;
             this.category = category;
+            categoryLbl.Text = category;
+            Console.Write("CATEGORY: " + category);
             this.drawingId = drawingId;
 
             Request req = new Request();
