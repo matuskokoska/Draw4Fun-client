@@ -8,7 +8,8 @@ function getCombo(painter, receiver, callback){
           +"(painter LIKE '"+painter+"' AND reciever LIKE '"+receiver+"') OR (painter LIKE '"+receiver+"' AND reciever LIKE '"+painter+ "') "
           +"ORDER BY id DESC LIMIT 1",
           function(result){
-            if(result[0]=='undefined'){
+            console.log(result);
+            if(result.length==0){
               var combo=1;
             }
             else{
