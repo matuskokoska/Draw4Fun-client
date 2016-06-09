@@ -12,7 +12,8 @@ module.exports = {
 
 	search: function (name, userid, callback) {
         console.log("SELECT id,nickname FROM users WHERE nickname LIKE '%" + name + "%' AND id NOT LIKE "+userid);
-		db.query("SELECT id,nickname FROM users WHERE nickname LIKE '%" + name + "%' AND id NOT LIKE "+userid,
+		db.query("SELECT id,nickname FROM users WHERE nickname LIKE '%" + name + "%' AND id NOT LIKE "+userid+
+             " AND id NOT IN(SELECT user2 FROM friendships WHERE user1="+userid+")",
         function (results) {
 			if (typeof callback === "function") {
 				callback(results);
