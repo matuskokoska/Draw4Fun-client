@@ -80,7 +80,7 @@
             // guessBox
             // 
             this.guessBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.guessBox.Location = new System.Drawing.Point(208, 50);
+            this.guessBox.Location = new System.Drawing.Point(224, 53);
             this.guessBox.Margin = new System.Windows.Forms.Padding(4);
             this.guessBox.Name = "guessBox";
             this.guessBox.Size = new System.Drawing.Size(252, 34);
@@ -131,7 +131,7 @@
             this.opponentLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.opponentLbl.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opponentLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(105)))), ((int)(((byte)(0)))));
-            this.opponentLbl.Location = new System.Drawing.Point(196, 39);
+            this.opponentLbl.Location = new System.Drawing.Point(207, 39);
             this.opponentLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.opponentLbl.Name = "opponentLbl";
             this.opponentLbl.Size = new System.Drawing.Size(79, 36);
@@ -169,7 +169,7 @@
             // 
             this.pb_Submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(226)))), ((int)(((byte)(248)))));
             this.pb_Submit.Image = global::Draw4Fun___client.Properties.Resources.button_s;
-            this.pb_Submit.Location = new System.Drawing.Point(487, 39);
+            this.pb_Submit.Location = new System.Drawing.Point(509, 39);
             this.pb_Submit.Margin = new System.Windows.Forms.Padding(4);
             this.pb_Submit.Name = "pb_Submit";
             this.pb_Submit.Size = new System.Drawing.Size(159, 62);
